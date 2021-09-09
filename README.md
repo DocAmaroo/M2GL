@@ -20,5 +20,6 @@
 
 # Semestre 10
 
+🚧 Stage...
+
 # TODO LIST
-:triangular_flag_on_post: **HMIN210**
