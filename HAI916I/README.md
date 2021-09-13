@@ -6,4 +6,3 @@
 ## Liens
 
 :link: [Moodle](https://moodle.umontpellier.fr/enrol/index.php?id=22617)
-
