@@ -10,7 +10,7 @@
 
 :books: [HAI914I - Gestion des données au delà de SQL (NoSQL)](./HAI914I "HAI914I courses")
 
-:books: [HAI916I - IA pour le génie logiciel](./HAI916 "HAI916 courses")
+:books: [HAI916I - IA pour le génie logiciel](./HAI916I "HAI916 courses")
 
 :books: [HAI919I - Ingénierie des modèles](./HAI919I "HAI919I courses")
 
@@ -23,3 +23,5 @@
 🚧 Stage...
 
 # TODO LIST
+
+:triangular_flag_on_post: HAI916I - [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite **19 septembre**
