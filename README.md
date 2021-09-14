@@ -24,12 +24,26 @@
 
 # TODO LIST
 
-🚩 HAI913I - Faire le TP1
+🚩 **HAI913I** <img style="vertical-align:middle" src="https://progress-bar.dev/20">
 
-> Rapport PDF (tous les exos sauf le 2)
->
-> Exercice 2, à faire personnellement sur moodle (avant le 21 sept.)
+👉 TP1 &rarr; Rendre les exos (sauf exo 2) en PDF 
 
-🚩 HAI916I - [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite **19 septembre**
+👉 TP1 &rarr; Exercice 2 à faire sur moodle | Date limite: **21 sept.**
 
-🚩 HAI931I - Rattraper le TP1
+<hr>
+
+🚩 **HAI916I** <img style="vertical-align:middle" src="https://progress-bar.dev/80"> 
+
+👉 [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite: **19 sept.** 
+
+<hr>
+
+🚩 **HAI919I** <img style="vertical-align:middle" src="https://progress-bar.dev/0"> 
+
+👉 TP1
+
+<hr>
+
+🚩 **HAI931** <img style="vertical-align:middle" src="https://progress-bar.dev/65"> 
+
+👉 Rattraper TP1
