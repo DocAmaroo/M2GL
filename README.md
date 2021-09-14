@@ -24,4 +24,12 @@
 
 # TODO LIST
 
-:triangular_flag_on_post: HAI916I - [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite **19 septembre**
+🚩 HAI913I - Faire le TP1
+
+> Rapport PDF (tous les exos sauf le 2)
+>
+> Exercice 2, à faire personnellement sur moodle (avant le 21 sept.)
+
+🚩 HAI916I - [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite **19 septembre**
+
+🚩 HAI931I - Rattraper le TP1
