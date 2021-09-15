@@ -47,3 +47,9 @@
 🚩 **HAI931** <img style="vertical-align:middle" src="https://progress-bar.dev/65"> 
 
 👉 Rattraper TP1
+
+<hr>
+
+🚩 **HAI934** <img style="vertical-align:middle" src="https://progress-bar.dev/0">
+
+👉 Preuve par récurrence | 🔖 [Introduction (diapo 9)](./HAI934/../HAI934I/cours/intro.pdf)
