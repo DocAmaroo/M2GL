@@ -24,7 +24,7 @@
 
 # TODO LIST
 
-🚩 **HAI913I** ![80%](https://progress-bar.dev/80)
+🚩 **HAI913I** ![20%](https://progress-bar.dev/20)
 
 👉 TP1 &rarr; Rendre les exos (sauf exo 2) en PDF 
 
@@ -32,24 +32,28 @@
 
 <hr>
 
-🚩 **HAI916I** <img style="vertical-align:middle" src="https://progress-bar.dev/80"> 
+🚩 **HAI916I** ![80%](https://progress-bar.dev/80)
+
 
 👉 [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite: **19 sept.** 
 
 <hr>
 
-🚩 **HAI919I** <img style="vertical-align:middle" src="https://progress-bar.dev/0"> 
+🚩 **HAI919I** ![0%](https://progress-bar.dev/0)
+
 
 👉 TP1
 
 <hr>
 
-🚩 **HAI931** <img style="vertical-align:middle" src="https://progress-bar.dev/65"> 
+🚩 **HAI931** ![65%](https://progress-bar.dev/65)
+
 
 👉 Rattraper TP1
 
 <hr>
 
-🚩 **HAI934** <img style="vertical-align:middle" src="https://progress-bar.dev/0">
+🚩 **HAI934** ![0%](https://progress-bar.dev/0)
+
 
 👉 Preuve par récurrence | 🔖 [Introduction (diapo 9)](./HAI934/../HAI934I/cours/intro.pdf)
