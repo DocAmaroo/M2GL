@@ -24,7 +24,7 @@
 
 # TODO LIST
 
-🚩 **HAI913I** <img style="vertical-align:middle" src="https://progress-bar.dev/20">
+🚩 **HAI913I** ![80%](https://progress-bar.dev/80)
 
 👉 TP1 &rarr; Rendre les exos (sauf exo 2) en PDF 
 
