@@ -1,0 +1,113 @@
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pyc
+*.so
+*.pyo
+*.iml
+/bin
+/obj
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Logs and databases
+*.log
+*.sqlite
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Android
+.gradle
+/local.properties
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Backup text software
+*.~
+
+# Eclipse metadata
+*.metadata
+
+# NodeJs
+node_modules
+
+# JetBrains
+.idea
+out
+
+# Other
+.antlr
+.cnf
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.[Cc]ache
+!?*.[Cc]ache/
+
+# Unwanted file/folder

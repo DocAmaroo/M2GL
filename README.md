@@ -12,7 +12,7 @@
 
 :books: [HAI916I - IA pour le génie logiciel](./HAI916I "HAI916 courses")
 
-:books: [HAI919I - Ingénierie des modèles](./HAI919I "HAI919I courses")
+:books: [HAI919I - Ingénierie Dirigée par les modèles](./HAI919I "HAI919I courses")
 
 :books: [HAI931I - Système réflexifs, models@runtime](./HAI931I "HAI931I courses")
 
@@ -24,7 +24,7 @@
 
 # TODO LIST
 
-🚩 **HAI913** ![50%](https://progress-bar.dev/50)
+🚩 **HAI913** ![75%](https://progress-bar.dev/75)
 
 👉 TP1 &rarr; Rendre les exos (sauf exo 2) en PDF 
 
@@ -32,10 +32,15 @@
 
 <hr>
 
-🚩 **HAI916** ![80%](https://progress-bar.dev/80)
+🚩 **HAI914** ![50%](https://progress-bar.dev/50)
 
+👉 Relire le cours
 
-👉 [Devoir à rendre](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090) | Date limite: **19 sept.** 
+👉 Finir le TP1
+
+<hr>
+
+🚩 **HAI916** ![100%](https://progress-bar.dev/100)
 
 <hr>
 
@@ -46,6 +51,5 @@
 <hr>
 
 🚩 **HAI931** ![65%](https://progress-bar.dev/65)
-
 
 👉 Rattraper TP1
