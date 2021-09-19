@@ -6,6 +6,33 @@
 
 ![Schéma UML](./assets/tp1_ex1.png)
 
+## Exercice 2
+
+👉 Reverse Engeenering
+
+Ceci peut être réalisé en utilisant des outils d'analyse comme le désassembleur ou le décompilateur. On essaie de reconstituer un modèle de données à partir des structures physiques des fichiers ou des tables.
+
+👉 Reengeenering
+
+Il faut décortiquer notre application actuel pour en comprendre son fonctionnement (soit par la documentation soit par Rétro-ingénierie), par la suite on peut établir un plan d'action, notamment en déterminant les potentielles évolution (mise à niveau, résolution de bug) de l'application ou même la conception de l'application sous un format mobile. Une fois les coût identifiés et la méthodologie obtenus on peut commencer à implémenter.
+
+👉 Qualité et refactoring 
+
+Pour évaluer la qualité de la précédente application on peut effectuer un benchmark avec notre application actuelle. Par exemple on peut utiliser la méthode suivante [PerfDiff](https://www.semanticscholar.org/paper/Analyzing-Performance-Differences-between-Multiple-Kalbarczyk-Imam/6a01c55c2c296ba798a027ed292cc65245f84320)
+
+Pour pouvoir estimer la qualité d'une application on peut utiliser les métriques suivantes:
+- Performance
+- Design
+- Sécurité
+- Fiabilité
+- Documentation
+
+Amélioration ...
+
+👉 Compréhension
+
+👉 Localisation des features et traçabilité
+
 ## Exercice 3
 
 🚩 SonarQube

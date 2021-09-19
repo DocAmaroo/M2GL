@@ -24,7 +24,7 @@
 
 # TODO LIST
 
-🚩 **HAI913** ![75%](https://progress-bar.dev/75)
+🚩 **HAI913** ![85%](https://progress-bar.dev/85)
 
 👉 TP1 &rarr; Rendre les exos (sauf exo 2) en PDF 
 
@@ -37,10 +37,6 @@
 👉 Relire le cours
 
 👉 Finir le TP1
-
-<hr>
-
-🚩 **HAI916** ![100%](https://progress-bar.dev/100)
 
 <hr>
 
