@@ -26,7 +26,7 @@
 
 🚩 **HAI913** ![95%](https://progress-bar.dev/95)
 
-👉 TP1 &rarr; Exercice 2 à faire sur moodle | Date limite: **21 sept.**
+👉 TP1 &rarr; Tous les exos sauf le 2 | Date limite: **27 sept.**
 
 <hr>
 
