@@ -24,9 +24,7 @@
 
 # TODO LIST
 
-🚩 **HAI913** ![85%](https://progress-bar.dev/85)
-
-👉 TP1 &rarr; Rendre les exos (sauf exo 2) en PDF 
+🚩 **HAI913** ![95%](https://progress-bar.dev/95)
 
 👉 TP1 &rarr; Exercice 2 à faire sur moodle | Date limite: **21 sept.**
 
@@ -40,6 +38,12 @@
 
 <hr>
 
+🚩 **HAI916** ![15%](https://progress-bar.dev/15)
+
+👉 Finir le TP2
+
+<hr>
+
 🚩 **HAI919** ![0%](https://progress-bar.dev/0)
 
 👉 Revoir le Cours et TD
@@ -48,4 +52,4 @@
 
 🚩 **HAI931** ![65%](https://progress-bar.dev/65)
 
-👉 Rattraper TP1
+👉 Souffrir fort et continuer le TP1 
