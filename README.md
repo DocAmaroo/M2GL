@@ -24,6 +24,12 @@
 
 # TODO LIST
 
+🚩 **HAI912** ![80%](https://progress-bar.dev/80)
+
+👉 Continuer le tuto flutter
+
+<hr>
+
 🚩 **HAI913** ![95%](https://progress-bar.dev/95)
 
 👉 Finir TP1 (sauf exo 2)
@@ -32,8 +38,7 @@
 
 🚩 **HAI914** ![50%](https://progress-bar.dev/50)
 
-👉 Relire le cours
-
+👉 Relire le cours  
 👉 Finir le TP1
 
 <hr>
@@ -53,3 +58,10 @@
 🚩 **HAI931** ![65%](https://progress-bar.dev/65)
 
 👉 Souffrir fort et continuer le TP1 
+
+<hr>
+
+🚩 **HAI934** ![75%](https://progress-bar.dev/75)
+
+👉 Relire le cours  
+🟢 Faire la preuve par récurrence ([voir diapo 9](./HAI934I/cours/intro.pdf))

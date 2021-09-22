@@ -67,6 +67,10 @@ Il est possible de localiser le code associé à une feature à l'aide des "pull
 
 👉 Refactorisation des fonctions de callback en promise de façon automatisée (PROMISESLAND).
 
-👉 Ils démontrent les problèmes liés au callback notamment les callback imbriqués, gestion des erreurs (error-first protocol)
+👉 Ils démontrent les problèmes liés au callback notamment les callback imbriqués, gestion des erreurs (error-first protocol) induisant un code moins compréhensible, aka "callback hell".
 
-👉 Une promise est un **design pattern** qui gère les événements asynchrones et résout bon nombre des problèmes liés aux callback.
+👉 Une promise est un **design pattern** qui gère les événements asynchrones et résout bon nombre des problèmes liés aux callback tout en conservant la gestion des erreurs.
+
+👉 Après avoir consulté certains issue et code sur github ils en arrivent à la conclusion que bon nombre de dev. souhaitent refactoriser leur code à l'aide de ses promises. Bon nombre d'utilisateur en vanté les bénéfices à leur utilisation.
+
+👉 
