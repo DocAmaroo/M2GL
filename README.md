@@ -64,4 +64,4 @@
 🚩 **HAI934** ![75%](https://progress-bar.dev/75)
 
 👉 Relire le cours  
-🟢 Faire la preuve par récurrence ([voir diapo 9](./HAI934I/cours/intro.pdf))
+👉 ~~Faire la preuve par récurrence ([voir diapo 9](./HAI934I/cours/intro.pdf))~~
