@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Maps/src" modelPluginID="Maps" modelName="Maps"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>Maps.ecore</foreignModel>
+  <genPackages prefix="Maps" disposableProviderFactory="true" ecorePackage="Maps.ecore#/">
+    <genClasses ecoreClass="Maps.ecore#//map">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maps.ecore#//map/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maps.ecore#//map/road"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maps.ecore#//map/spaces"/>
+    </genClasses>
+    <genClasses ecoreClass="Maps.ecore#//Square"/>
+    <genClasses ecoreClass="Maps.ecore#//Pedestrian"/>
+    <genClasses ecoreClass="Maps.ecore#//Street"/>
+    <genClasses ecoreClass="Maps.ecore#//Garden"/>
+    <genClasses image="false" ecoreClass="Maps.ecore#//PublicSpace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maps.ecore#//PublicSpace/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Maps.ecore#//PublicSpace/borderedBy"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Maps.ecore#//Road">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maps.ecore#//Road/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maps.ecore#//Road/length"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Maps.ecore#//Road/border"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Maps.ecore#//Road/meet"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

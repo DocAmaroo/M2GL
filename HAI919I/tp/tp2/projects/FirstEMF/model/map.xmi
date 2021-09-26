@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps:map xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:maps="maps"
+    xsi:schemaLocation="maps Maps.ecore">
+  <road xsi:type="maps:Street"
+      name="Avenue Guillaume Pellicier"
+      border="//@spaces.0 //@spaces.1"
+      meet="//@road.1"/>
+  <road xsi:type="maps:Street"
+      name="Avenue des Pichoulines"
+      border="//@spaces.1"
+      meet="//@road.0"/>
+  <spaces xsi:type="maps:Square"
+      name="MaxiSquare"
+      borderedBy="//@road.0"/>
+  <spaces xsi:type="maps:Garden"
+      name="CharliGarden"
+      borderedBy="//@road.0 //@road.1"/>
+</maps:map>
