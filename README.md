@@ -30,28 +30,10 @@
 
 <hr>
 
-🚩 **HAI913** ![95%](https://progress-bar.dev/95)
-
-👉 Finir TP1 (sauf exo 2)
-
-<hr>
-
 🚩 **HAI914** ![75%](https://progress-bar.dev/75)
 
 👉 Relire le cours  
 👉 Finir le TP1
-
-<hr>
-
-🚩 **HAI916** ![100%](https://progress-bar.dev/100)
-
-~~👉 Finir le TP2~~
-
-<hr>
-
-🚩 **HAI919** ![100%](https://progress-bar.dev/100)
-
-~~👉 Continuer le TP2~~
 
 <hr>
 
