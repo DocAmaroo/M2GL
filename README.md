@@ -36,22 +36,22 @@
 
 <hr>
 
-🚩 **HAI914** ![50%](https://progress-bar.dev/50)
+🚩 **HAI914** ![75%](https://progress-bar.dev/75)
 
 👉 Relire le cours  
 👉 Finir le TP1
 
 <hr>
 
-🚩 **HAI916** ![15%](https://progress-bar.dev/15)
+🚩 **HAI916** ![100%](https://progress-bar.dev/100)
 
-👉 Finir le TP2
+~~👉 Finir le TP2~~
 
 <hr>
 
-🚩 **HAI919** ![0%](https://progress-bar.dev/0)
+🚩 **HAI919** ![50%](https://progress-bar.dev/50)
 
-👉 Revoir le Cours et TD
+👉 Continuer le TP2
 
 <hr>
 

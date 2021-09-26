@@ -32,21 +32,48 @@ RETURN r.name as Nom, nbDepartement
 
 👉 Retourner le nom des communes ainsi que le nom de leur département, quand ces communes sont voisines de MONTPELLIER
 
+```neo4j
+MATCH (c:Commune)-[:NEARBY]->(mtp:Commune {name: 'MONTPELLIER'})
+MATCH (c)-[:WITHIN]->(d:Departement)
+RETURN c.name as NomCommune, d.name as NomDepartement
+```
 
 <hr/>
 
 👉 Retourner les communes (nom et codeinsee) qui sont voisines de communes voisines de MONTPELLIER et qui ne sont pas dans l’HERAULT
+
+```neo4j
+MATCH (c:Commune)-[:NEARBY*1..2]-(mtp:Commune {name: 'MONTPELLIER'})
+MATCH (c)-[:WITHIN]->(d:Departement)
+WHERE not d.name = "HERAULT"
+RETURN distinct c.name as NomCommune, d.name as NomDepartement
+```
 
 <hr/>
 
 👉 Retourner le nom de chaque commune ainsi que le nom de sa région et de son département de rattachement
 
 
+```neo4j
+MATCH (c:Commune)-[:WITHIN]->(d:Departement)
+MATCH (d:Departement)-[:WITHIN]->(r:Region)
+RETURN c.name as Commune, d.name as Departement, r.name as Region ORDER BY c.name
+```
+
 <hr/>
 
 👉 Retourner tous les chemins qui relient MONTPELLIER à NIMES
 
+```neo4j
+MATCH p = (c1:Commune {name:"NIMES"}) -[n:NEARBY*]- (c2:Commune {name:"MONTPELLIER"})
+RETURN p
+```
 
 <hr/>
 
 👉 Retourner le plus court chemin (ou un des plus courts chemins) entre MONTPELLIER et NIMES
+
+```neo4j
+MATCH p=shortestPath( (m:Commune {name: 'MONTPELLIER'})-[:NEARBY*..25]-(n:Commune {name: 'NIMES'}) )
+RETURN length(p) as CheminLePlusCourt
+```
