@@ -49,9 +49,9 @@
 
 <hr>
 
-🚩 **HAI919** ![50%](https://progress-bar.dev/50)
+🚩 **HAI919** ![100%](https://progress-bar.dev/100)
 
-👉 Continuer le TP2
+~~👉 Continuer le TP2~~
 
 <hr>
 
