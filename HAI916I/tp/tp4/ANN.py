@@ -65,7 +65,7 @@ NN.train()
 # create two new examples to predict                                   
 example = np.array([[1, 1, 0]])
 example_2 = np.array([[0, 1, 1]])
-#example_2 = np.array([[0, 0, 1]])
+# example_2 = np.array([[0, 0, 1]])
 
 # print the predictions for both examples                                   
 print(NN.predict(example), ' - Correct: ', example[0][0])
