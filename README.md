@@ -24,14 +24,13 @@
 
 # TODO LIST
 
-🚩 **HAI914** ![90%](https://progress-bar.dev/90)
+🚩 **HAI914** ![0%](https://progress-bar.dev/0)
 
-👉 Relire le cours  
-👉 Finir le TP1
+👉 Relire les requêtes TP2
 
 <hr>
 
-🚩 **HAI916** ![30%](https://progress-bar.dev/30)
+🚩 **HAI916** ![65%](https://progress-bar.dev/65)
 
 👉 Continuer le TP3
 
@@ -41,5 +40,3 @@
 
 👉 Relire le cours  
 👉 Souffrir fort
-
-<hr>
