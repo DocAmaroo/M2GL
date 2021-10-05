@@ -24,15 +24,23 @@
 
 # TODO LIST
 
+🚩 **HAI913I** ![30%](https://progress-bar.dev/30)
+
+👉 Finir le TP2 Partie 2 | 📆 Avant 19 oct. 9h  
+👉 Finir le TP3 | 📆 Avant 18 oct. 23h
+
+<hr>
+
 🚩 **HAI914** ![0%](https://progress-bar.dev/0)
 
 👉 Relire les requêtes TP2
 
 <hr>
 
-🚩 **HAI916** ![65%](https://progress-bar.dev/65)
+🚩 **HAI916** ![35%](https://progress-bar.dev/35)
 
 👉 Continuer le TP3
+👉 Faire le TP4 pour lundi 11 (à rendre sur moodle)
 
 <hr>
 
