@@ -24,6 +24,12 @@
 
 # TODO LIST
 
+🚩 **HAI912** ![30%](https://progress-bar.dev/30)
+
+👉 Finir le TP (Appli météo)
+
+<hr>
+
 🚩 **HAI913I** ![30%](https://progress-bar.dev/30)
 
 👉 Finir le TP2 Partie 2 | 📆 Avant 19 oct. 9h  
@@ -44,7 +50,20 @@
 
 <hr>
 
+🚩 **HAI919** ![0%](https://progress-bar.dev/0)
+
+👉 CC modèles, métamodèles, métamétamodèle  | 📆 13 oct. 16h45
+👉 TD 3 et 4 (groupe de 2) | 📆 Avant 27 oct. 23h.
+
+<hr>
+
 🚩 **HAI931** ![20%](https://progress-bar.dev/20)
 
 👉 Relire le cours  
 👉 Souffrir fort
+
+🚩 **HAI934** ![75%](https://progress-bar.dev/75)
+
+👉 Revoir vite euf les diapos et exos pour préparer le CC
+
+<hr>

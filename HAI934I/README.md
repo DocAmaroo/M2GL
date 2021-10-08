@@ -56,3 +56,15 @@ On as démontré que ∀x ∈ N.f(x) et ∀i ∈ N l'axiome de récurrence est v
 </details>
 
 
+
+
+## Preuve en logique du premier ordre
+
+👉 [Voir Cours 1](cours/cours1.pdf)
+
+## Déduction auto. en logique propositionelle classique
+
+👉 [Voir cours 2](cours/cours2.pdf)
+
+classique => tier exclus.
+intuitionniste => pas de tiers exclus.
