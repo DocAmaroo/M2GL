@@ -1,0 +1,1 @@
+ export COUCH3=http://admin:7kR9fu0L8ZYqEp4ZJVdX@prodpeda-couchdb3-1.infra.umontpellier.fr:5984
