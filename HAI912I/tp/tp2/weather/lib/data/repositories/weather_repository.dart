@@ -1,5 +1,5 @@
 import 'package:weather/data/models/weather_model.dart';
-import 'package:weather/services/open_weather_services.dart';
+import 'package:weather/services/openweather_services.dart';
 
 class WeatherRepository {
   final OpenWeatherApiServices _openWeatherApiServices;
