@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather/data/bloc/weather_bloc.dart';
 
-import 'presentations/views/homepage.dart';
+import 'views/homepage.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -13,7 +15,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const MyHomePage(title: 'Weather'),
+      home: BlocProvider<WeatherBloc>(
+        create: (context) => WeatherBloc(),
+        child: const MyHomePage(title: 'Weather'),
+      ),
     );
   }
 }

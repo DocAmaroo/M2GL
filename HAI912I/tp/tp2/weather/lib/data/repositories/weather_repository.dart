@@ -8,7 +8,7 @@ class WeatherRepository {
       : _openWeatherApiServices =
             openWeatherApiServices ?? OpenWeatherApiServices();
 
-  Future<WeatherModel> getWeather(String cityName) async {
+  Future<WeatherForecastModel> getWeatherForecast(String cityName) async {
     final weather =
         await _openWeatherApiServices.getWeatherForecast(cityName: cityName);
 

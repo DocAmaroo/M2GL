@@ -1,18 +1,18 @@
-class WeatherModel {
+class WeatherForecastModel {
   String? cod;
   int? message;
   int? cnt;
   List<Liste>? list;
   City? city;
 
-  WeatherModel(
+  WeatherForecastModel(
       {required cod,
       required message,
       required cnt,
       required list,
       required city});
 
-  WeatherModel.fromJson(Map<String, dynamic> json) {
+  WeatherForecastModel.fromJson(Map<String, dynamic> json) {
     cod = json['cod'];
     message = json['message'];
     cnt = json['cnt'];
@@ -42,113 +42,29 @@ class WeatherModel {
 
 class Liste {
   int? dt;
-  Main? main;
   List<Weather>? weather;
-  Clouds? clouds;
-  Wind? wind;
-  int? visibility;
-  int? pop;
-  Sys? sys;
-  String? dtTxt;
 
-  Liste(
-      {required dt,
-      required main,
-      required weather,
-      required clouds,
-      required wind,
-      required visibility,
-      required pop,
-      required sys,
-      required dtTxt});
+  Liste({
+    required dt,
+    required weather,
+  });
 
   Liste.fromJson(Map<String, dynamic> json) {
     dt = json['dt'];
-    main = json['main'] != null ? Main.fromJson(json['main']) : null;
     if (json['weather'] != null) {
       weather = [];
       json['weather'].forEach((v) {
         weather!.add(Weather.fromJson(v));
       });
     }
-    clouds = json['clouds'] != null ? Clouds.fromJson(json['clouds']) : null;
-    wind = json['wind'] != null ? Wind.fromJson(json['wind']) : null;
-    visibility = json['visibility'];
-    pop = json['pop'];
-    sys = json['sys'] != null ? Sys.fromJson(json['sys']) : null;
-    dtTxt = json['dt_txt'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['dt'] = dt;
-    if (main != null) {
-      data['main'] = main!.toJson();
-    }
     if (weather != null) {
       data['weather'] = weather!.map((v) => v.toJson()).toList();
     }
-    if (clouds != null) {
-      data['clouds'] = clouds!.toJson();
-    }
-    if (wind != null) {
-      data['wind'] = wind!.toJson();
-    }
-    data['visibility'] = visibility;
-    data['pop'] = pop;
-    if (sys != null) {
-      data['sys'] = sys!.toJson();
-    }
-    data['dt_txt'] = dtTxt;
-    return data;
-  }
-}
-
-class Main {
-  double? temp;
-  double? feelsLike;
-  double? tempMin;
-  double? tempMax;
-  int? pressure;
-  int? seaLevel;
-  int? grndLevel;
-  int? humidity;
-  double? tempKf;
-
-  Main(
-      {required temp,
-      required feelsLike,
-      required tempMin,
-      required tempMax,
-      required pressure,
-      required seaLevel,
-      required grndLevel,
-      required humidity,
-      required tempKf});
-
-  Main.fromJson(Map<String, dynamic> json) {
-    temp = json['temp'];
-    feelsLike = json['feels_like'];
-    tempMin = json['temp_min'];
-    tempMax = json['temp_max'];
-    pressure = json['pressure'];
-    seaLevel = json['sea_level'];
-    grndLevel = json['grnd_level'];
-    humidity = json['humidity'];
-    tempKf = json['temp_kf'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['temp'] = temp;
-    data['feels_like'] = feelsLike;
-    data['temp_min'] = tempMin;
-    data['temp_max'] = tempMax;
-    data['pressure'] = pressure;
-    data['sea_level'] = seaLevel;
-    data['grnd_level'] = grndLevel;
-    data['humidity'] = humidity;
-    data['temp_kf'] = tempKf;
     return data;
   }
 }
@@ -176,59 +92,9 @@ class Weather {
     data['icon'] = icon;
     return data;
   }
-}
 
-class Clouds {
-  int? all;
-
-  Clouds({required all});
-
-  Clouds.fromJson(Map<String, dynamic> json) {
-    all = json['all'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['all'] = all;
-    return data;
-  }
-}
-
-class Wind {
-  double? speed;
-  int? deg;
-  double? gust;
-
-  Wind({required speed, required deg, required gust});
-
-  Wind.fromJson(Map<String, dynamic> json) {
-    speed = json['speed'];
-    deg = json['deg'];
-    gust = json['gust'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['speed'] = speed;
-    data['deg'] = deg;
-    data['gust'] = gust;
-    return data;
-  }
-}
-
-class Sys {
-  String? pod;
-
-  Sys({required pod});
-
-  Sys.fromJson(Map<String, dynamic> json) {
-    pod = json['pod'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['pod'] = pod;
-    return data;
+  String get iconUrl {
+    return 'http://openweathermap.org/img/wn/$icon@2x.png';
   }
 }
 
