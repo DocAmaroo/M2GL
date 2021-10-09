@@ -1,0 +1,42 @@
+ {
+      "docs": 
+[{                                                                              
+  "_id" : "53",                                                            
+  "reg" : "53",  
+  "type": "old_region",                                                                    
+  "chef_lieu_reg" : "35238",                                                   
+  "nom_reg" : "BRETAGNE",                                                       
+  "departements" : [{"dep" : "56", "nom_dep" : "MORBIHAN", "chef_lieu_dep" : "56260"},{"dep" : "35", "nom_dep" : "ILLE-ET-VILAINE", "chef_lieu_dep" : "35238"},{"dep" : "29", "nom_dep" : "FINISTERE", "chef_lieu_dep" : "29232"}, {"dep" : "22", "nom_dep" : "COTES-D'ARMOR", "chef_lieu_dep" : "22278"}  ]                                                       
+},                                         
+   {                                                                                                                 
+  "_id" : "91",                                                            
+  "reg" : "91",                                                        
+  "chef_lieu_reg" : "34172",     
+   "type": "old_region",  
+  "new_reg" : "occitanie",                                                      
+  "nom_reg" : "LANGUEDOC-ROUSSILLON",     
+ "departements" : [{"dep" : "34", "nom_dep" : "HERAULT", "chef_lieu_dep" : "34172"},{"dep" : "30", "nom_dep" : "GARD", "chef_lieu_dep" : "30189"},{"dep" : "11", "nom_dep" : "AUDE", "chef_lieu_dep" : "11069"}, {"dep" : "66", "nom_dep" : "PYRENEES-ORIENTALES", "chef_lieu_dep" : "66136"}  ]                                       
+                                                     
+},
+
+{             
+   "_id" :"73",                                                               
+  "reg" : "73", 
+  "new_reg" : "occitanie",                                                                        
+  "chef_lieu_reg" : "31555",                                                   
+  "nom_reg" : "MIDI-PYRENEES",                                                  
+  "type": "old_region"                                          
+},
+{             
+   "_id" :"occitanie",                                                                                                                               
+  "chef_lieu_reg" : "31555",                                                   
+  "nom_reg" : "Occitanie",                                                  
+  "type": "region",
+  "president": {"nom":"Delga","prenom":"Carole"}                          
+}
+
+]}
+
+
+
+
