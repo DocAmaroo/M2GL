@@ -15,6 +15,6 @@ class LoadedWeatherState extends WeatherState {
 
 // Failed to load weather information
 class FailedToLoadWeatherState extends WeatherState {
-  final Error error;
+  final http_exception.HTTPException error;
   FailedToLoadWeatherState({required this.error});
 }

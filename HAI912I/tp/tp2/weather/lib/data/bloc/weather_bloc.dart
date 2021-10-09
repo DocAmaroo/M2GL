@@ -1,10 +1,8 @@
-import 'dart:io';
-
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
 import 'package:weather/data/models/weather_model.dart';
 import 'package:weather/data/repositories/weather_repository.dart';
+import 'package:weather/errors/http_exception.dart' as http_exception;
 
 part 'weather_event.dart';
 part 'weather_state.dart';
@@ -23,8 +21,8 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
       final weather =
           await weatherRepository.getWeatherForecast(event.cityName);
       emit(LoadedWeatherState(weather: weather));
-    } catch (e) {
-      throw Error();
+    } on http_exception.HTTPException catch (e) {
+      emit(FailedToLoadWeatherState(error: e));
     }
   }
 }

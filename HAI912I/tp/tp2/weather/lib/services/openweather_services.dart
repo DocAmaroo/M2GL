@@ -8,6 +8,7 @@ import 'package:weather/errors/http_exception.dart';
 class OpenWeatherApiServices {
   static const _host = 'api.openweathermap.org';
   static const _path = 'data/2.5';
+  static const _units = 'metric';
 
   /// Return final Uri to call the Openweather API.
   Uri _buildUri(String endpoint, Map<String, String> queryParameters) {
@@ -24,12 +25,12 @@ class OpenWeatherApiServices {
   /// Return weather forecast informaton from the given city.
   Future<WeatherForecastModel> getWeatherForecast(
       {required String cityName}) async {
-    final Uri url = _buildUri('forecast', {'q': cityName}); // Get the url
+    final Uri url =
+        _buildUri('forecast', {'q': cityName, 'units': _units}); // Get the url
     final response = await http.get(url); // Get the response
 
     // Handle response
     if (response.statusCode == 200) {
-      print('[+] Api response\n ${response.body}');
       return WeatherForecastModel.fromJson(jsonDecode(response.body));
     } else {
       throw HTTPException(

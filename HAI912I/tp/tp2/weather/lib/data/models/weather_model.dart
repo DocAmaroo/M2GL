@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class WeatherForecastModel {
   String? cod;
   int? message;
@@ -43,10 +45,14 @@ class WeatherForecastModel {
 class Liste {
   int? dt;
   List<Weather>? weather;
+  Main? main;
+  Wind? wind;
 
   Liste({
     required dt,
     required weather,
+    required main,
+    required wind,
   });
 
   Liste.fromJson(Map<String, dynamic> json) {
@@ -57,6 +63,8 @@ class Liste {
         weather!.add(Weather.fromJson(v));
       });
     }
+    main = json['main'] != null ? Main.fromJson(json['main']) : null;
+    wind = json['wind'] != null ? Wind.fromJson(json['wind']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -65,7 +73,22 @@ class Liste {
     if (weather != null) {
       data['weather'] = weather!.map((v) => v.toJson()).toList();
     }
+    if (main != null) {
+      data['main'] = main!.toJson();
+    }
+    if (wind != null) {
+      data['wind'] = wind!.toJson();
+    }
     return data;
+  }
+
+  DateTime get completeDate {
+    return DateTime.fromMillisecondsSinceEpoch(dt! * 1000);
+  }
+
+  String get formatedDate {
+    DateTime parseDate = DateTime.fromMillisecondsSinceEpoch(dt! * 1000);
+    return DateFormat.EEEE().format(parseDate);
   }
 }
 
@@ -160,6 +183,58 @@ class Coord {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['lat'] = lat;
     data['lon'] = lon;
+    return data;
+  }
+}
+
+class Main {
+  num? temp;
+  num? feelsLike;
+  num? tempMin;
+  num? tempMax;
+  int? humidity;
+
+  Main(
+      {required temp,
+      required feelsLike,
+      required tempMin,
+      required tempMax,
+      required humidity});
+
+  Main.fromJson(Map<String, dynamic> json) {
+    temp = json['temp'];
+    feelsLike = json['feels_like'];
+    tempMin = json['temp_min'];
+    tempMax = json['temp_max'];
+    humidity = json['humidity'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = Map<String, dynamic>();
+    data['temp'] = temp;
+    data['feels_like'] = feelsLike;
+    data['temp_min'] = tempMin;
+    data['temp_max'] = tempMax;
+    data['humidity'] = humidity;
+    return data;
+  }
+}
+
+class Wind {
+  num? speed;
+  int? deg;
+
+  Wind({required speed, required deg, required gust});
+
+  Wind.fromJson(Map<String, dynamic> json) {
+    speed = json['speed'];
+    deg = json['deg'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = Map<String, dynamic>();
+    data['speed'] = speed;
+    data['deg'] = deg;
     return data;
   }
 }
