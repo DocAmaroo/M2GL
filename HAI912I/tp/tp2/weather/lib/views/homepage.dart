@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather/data/bloc/weather_bloc.dart';
-import 'package:weather/data/models/weather_model.dart';
 import 'package:weather/views/search.dart';
 import 'package:weather/widgets/current_conditions.dart';
-import 'package:weather/widgets/forecast_card_widget.dart';
 import 'package:weather/widgets/forecast_horizontal_list_widget.dart';
-import 'package:weather/widgets/item_widget.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
