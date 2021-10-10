@@ -13,7 +13,7 @@ class OpenWeatherApiServices {
   /// Return final Uri to call the Openweather API.
   Uri _buildUri(String endpoint, Map<String, String> queryParameters) {
     // handle query parameters
-    var query = {'appid': dotenv.get('OPEN_WEATHER_API_KEY')};
+    var query = {'appid': dotenv.get('OPEN_WEATHER_API_KEY'), 'lang': 'fr'};
     queryParameters = query..addAll(queryParameters);
 
     // build the Uri

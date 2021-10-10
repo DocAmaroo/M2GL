@@ -210,7 +210,7 @@ class Main {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['temp'] = temp;
     data['feels_like'] = feelsLike;
     data['temp_min'] = tempMin;
@@ -232,7 +232,7 @@ class Wind {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['speed'] = speed;
     data['deg'] = deg;
     return data;

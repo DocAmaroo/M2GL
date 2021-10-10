@@ -24,7 +24,7 @@
 
 # TODO LIST
 
-🚩 **HAI912** ![30%](https://progress-bar.dev/30)
+🚩 **HAI912** ![95%](https://progress-bar.dev/95)
 
 👉 Finir le TP (Appli météo)
 
@@ -43,10 +43,9 @@
 
 <hr>
 
-🚩 **HAI916** ![35%](https://progress-bar.dev/35)
+🚩 **HAI916** ![65%](https://progress-bar.dev/65)
 
 👉 Continuer le TP3
-👉 Faire le TP4 pour lundi 11 (à rendre sur moodle)
 
 <hr>
 

@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       home: BlocProvider<WeatherBloc>(
         create: (context) => WeatherBloc(),
-        child: const MyHomePage(title: 'Weather'),
+        child: const MyHomePage(title: 'Ma météo'),
       ),
     );
   }

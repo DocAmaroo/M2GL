@@ -14,38 +14,43 @@ class CurrentConditions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(children: <Widget>[
-        _getIcon(),
-        const MySpacer(),
-        _getCityName(),
-        const MySpacer(),
-        _getDescription(),
-        const MySpacer(),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            _getHumidityItem(),
-            _getTemperatureItem(),
-            _getWindItem()
-          ],
-        )
-      ]),
+    return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+      elevation: 3,
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(children: <Widget>[
+          _getIcon(context),
+          const MySpacer(),
+          _getCityName(),
+          const MySpacer(size: 16),
+          _getDescription(),
+          const MySpacer(size: 16),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              _getHumidityItem(),
+              _getTemperatureItem(),
+              _getWindItem()
+            ],
+          )
+        ]),
+      ),
     );
   }
 
-  Image _getIcon() {
+  Image _getIcon(BuildContext context) {
     return Image(image: NetworkImage(_liste.weather![0].iconUrl));
   }
 
   Text _getCityName() {
     return Text(_cityName,
-        style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold));
+        style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w500));
   }
 
   Text _getDescription() {
     return Text(_liste.weather![0].description.toString(),
-        style: const TextStyle(fontSize: 16, fontStyle: FontStyle.italic));
+        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w400));
   }
 
   WeatherItem _getHumidityItem() {
@@ -54,11 +59,12 @@ class CurrentConditions extends StatelessWidget {
   }
 
   WeatherItem _getTemperatureItem() {
-    return WeatherItem(
-        Icons.thermostat_rounded, '${_liste.main!.tempMax.toString()}°C');
+    int temp = _liste.main!.tempMax!.floor();
+    return WeatherItem(Icons.thermostat_rounded, '$temp°C');
   }
 
   WeatherItem _getWindItem() {
-    return WeatherItem(Icons.air, '${_liste.wind!.speed.toString()}km/h');
+    int wind = _liste.wind!.speed!.floor();
+    return WeatherItem(Icons.air, '$wind km/h');
   }
 }

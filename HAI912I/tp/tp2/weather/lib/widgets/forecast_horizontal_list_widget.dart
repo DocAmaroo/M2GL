@@ -15,17 +15,19 @@ class ForecastHorizontalListWidget extends StatelessWidget {
         height: 250,
         child: ListView(
           scrollDirection: Axis.horizontal,
-          children: getNoonTime(),
+          children: _getNoonTime(),
         ));
   }
 
   /// Get forecasts weather at 14pm
-  List<ForecastCardWidget> getNoonTime() {
-    List<ForecastCardWidget> widgets = [ForecastCardWidget(_weather.list![0])];
+  List<ForecastCardWidget> _getNoonTime() {
+    List<ForecastCardWidget> widgets = [];
 
-    for (int i = 0; i < _weather.list!.length; i++) {
+    for (int i = 1; i < _weather.list!.length; i++) {
       DateTime date = _weather.list![i].completeDate;
-      if (date.hour == 14) widgets.add(ForecastCardWidget(_weather.list![i]));
+      if (date.hour == 14 && date.day != DateTime.now().day) {
+        widgets.add(ForecastCardWidget(_weather.list![i]));
+      }
     }
 
     return widgets;

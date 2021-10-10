@@ -8,6 +8,6 @@ class WeatherItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [Icon(_icon), Text(_text)]);
+    return Column(children: [Text(_text), Icon(_icon)]);
   }
 }
