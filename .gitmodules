@@ -1,3 +1,6 @@
 [submodule "HAI916I/tp/tp4/code2vec"]
 	path = HAI916I/tp/tp4/code2vec
 	url = https://github.com/tech-srl/code2vec.git
+[submodule "HAI912I/tp/tp2/WeatherApp"]
+	path = HAI912I/tp/tp2/WeatherApp
+	url = git@github.com:DocAmaroo/WeatherApp.git
