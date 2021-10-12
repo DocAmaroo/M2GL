@@ -1,0 +1,5 @@
+;add;get;isEmpty;peek;pool;secretLC;staticLT;nbLT;secretLT;comparator;secretQAP;secretQDE
+ListeTableau;1;1;1;0;0;0;1;1;1;0;0;0
+ListeChainee;1;1;1;1;1;1;0;0;0;0;0;0
+QueueDoubleEntree;1;0;1;1;1;0;0;0;0;0;0;1
+QueueAvecPriorite;1;0;1;1;1;0;0;0;0;1;1;0

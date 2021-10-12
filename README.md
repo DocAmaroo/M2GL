@@ -24,16 +24,9 @@
 
 # TODO LIST
 
-🚩 **HAI912** ![95%](https://progress-bar.dev/95)
-
-👉 Finir le TP (Appli météo)
-
-<hr>
-
-🚩 **HAI913I** ![30%](https://progress-bar.dev/30)
+🚩 **HAI913I** ![60%](https://progress-bar.dev/60)
 
 👉 Finir le TP2 Partie 2 | 📆 Avant 19 oct. 9h  
-👉 Finir le TP3 | 📆 Avant 18 oct. 23h
 
 <hr>
 
@@ -43,9 +36,9 @@
 
 <hr>
 
-🚩 **HAI916** ![65%](https://progress-bar.dev/65)
+🚩 **HAI916** ![10%](https://progress-bar.dev/10)
 
-👉 Continuer le TP3
+👉 TP3 (Constraints) à faire en groupe | 📆 Lundi 18 oct. 8h
 
 <hr>
 

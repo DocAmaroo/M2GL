@@ -140,7 +140,6 @@ public class Parser {
 
 	}
 
-	
 	// navigate variables inside method
 	public static void printVariableInfo(CompilationUnit parse) {
 
@@ -163,77 +162,76 @@ public class Parser {
 	}
 	
 	// navigate method invocations inside method
-		public static void printMethodInvocationInfo(CompilationUnit parse) {
+	public static void printMethodInvocationInfo(CompilationUnit parse) {
 
-			MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
-			parse.accept(visitor1);
-			for (MethodDeclaration method : visitor1.getMethods()) {
+		MethodDeclarationVisitor visitor1 = new MethodDeclarationVisitor();
+		parse.accept(visitor1);
+		for (MethodDeclaration method : visitor1.getMethods()) {
 
-				MethodInvocationVisitor visitor2 = new MethodInvocationVisitor();
-				method.accept(visitor2);
+			MethodInvocationVisitor visitor2 = new MethodInvocationVisitor();
+			method.accept(visitor2);
 
-				for (MethodInvocation methodInvocation : visitor2.getMethods()) {
-					System.out.println("method " + method.getName() + " invoc method "
-							+ methodInvocation.getName());
-				}
-
+			for (MethodInvocation methodInvocation : visitor2.getMethods()) {
+				System.out.println("method " + method.getName() + " invoc method "
+						+ methodInvocation.getName());
 			}
+
 		}
-		
-		// Return the number of class
-		public static int getNumberOfClasses(CompilationUnit parse) {
-			TypeDeclarationVisitor visitor = new TypeDeclarationVisitor();
-			parse.accept(visitor);
-			
-			return visitor.getTypes().size();
-		}
-		
-		// Return the number of methods
-		public static int getNumberOfMethods(CompilationUnit parse) {
-			MethodDeclarationVisitor visitor = new MethodDeclarationVisitor();
-			parse.accept(visitor);
-			
-			return visitor.getMethods().size();
+	}
+
+	// Return the number of class
+	public static int getNumberOfClasses(CompilationUnit parse) {
+		TypeDeclarationVisitor visitor = new TypeDeclarationVisitor();
+		parse.accept(visitor);
+
+		return visitor.getTypes().size();
+	}
+
+	// Return the number of methods
+	public static int getNumberOfMethods(CompilationUnit parse) {
+		MethodDeclarationVisitor visitor = new MethodDeclarationVisitor();
+		parse.accept(visitor);
+
+		return visitor.getMethods().size();
+	}
+
+	// Return the number of lines
+	public static int getNumberOfLines(CompilationUnit parse) {
+		TypeDeclarationVisitor visitor = new TypeDeclarationVisitor();
+		parse.accept(visitor);
+		return parse.getLineNumber(visitor.getLength());
+	}
+
+	// Return the number of packages
+	public static List<String> getPackages(CompilationUnit parse) {
+		PackageDeclarationVisitor visitor = new PackageDeclarationVisitor();
+		parse.accept(visitor);
+
+		return visitor.getPackages().stream().map(p -> p.toString()).collect(Collectors.toList());
+	}
+
+	// Return the number of lines by methods
+	public static int getNumberOfLinesByMethods(CompilationUnit parse) {
+		MethodDeclarationVisitor visitor = new MethodDeclarationVisitor();
+		parse.accept(visitor);
+
+		int totalLines = 0;
+		for(MethodDeclaration method : visitor.getMethods()) {
+			int start = method.getStartPosition(); // first character position
+			int end = start + method.getLength(); // last character position
+
+			int lineStart = parse.getLineNumber(start);
+			int lineEnd = parse.getLineNumber(end);
+			totalLines += lineEnd - lineStart;
 		}
 
-		// Return the number of lines
-		public static int getNumberOfLines(CompilationUnit parse) {
-			TypeDeclarationVisitor visitor = new TypeDeclarationVisitor();
-			parse.accept(visitor);
-			return parse.getLineNumber(visitor.getLength());
-		}
-		
-		// Return the number of packages
-		public static List<String> getPackages(CompilationUnit parse) {
-			PackageDeclarationVisitor visitor = new PackageDeclarationVisitor();
-			parse.accept(visitor);
-			
-			return visitor.getPackages().stream().map(p -> p.toString()).collect(Collectors.toList());
-		}
-		
-		// Return the number of lines by methods
-		public static int getNumberOfLinesByMethods(CompilationUnit parse) {
-			MethodDeclarationVisitor visitor = new MethodDeclarationVisitor();
-			parse.accept(visitor);
-			
-			int totalLines = 0;
-			for(MethodDeclaration method : visitor.getMethods()) {
-				int start = method.getStartPosition(); // first character position
-				int end = start + method.getLength(); // last character position
-				
-				int lineStart = parse.getLineNumber(start);
-				int lineEnd = parse.getLineNumber(end);
-				totalLines += lineEnd - lineStart;
-			}
-			
-			return totalLines;
-		}
-		
-		public static int getNumberOfAttributs(CompilationUnit parse) {
-			TypeDeclarationVisitor visitor = new TypeDeclarationVisitor();
-			parse.accept(visitor);
-			
-			return visitor.getAttribus().size(); 
-		}
-	
+		return totalLines;
+	}
+
+	public static int getNumberOfAttributs(CompilationUnit parse) {
+		TypeDeclarationVisitor visitor = new TypeDeclarationVisitor();
+		parse.accept(visitor);
+
+		return visitor.getAttribus().size();
+	}
 }

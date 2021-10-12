@@ -1,0 +1,17 @@
+digraph G { 
+	rankdir=BT;
+0 [shape=record,style=filled,label="{0 (I: 6, E: 1)|secretLC\n|ListeChainee\n}"];
+1 [shape=record,style=filled,label="{1 (I: 6, E: 1)|staticLT\nnbLT\nsecretLT\n|ListeTableau\n}"];
+2 [shape=record,style=filled,label="{2 (I: 5, E: 1)|secretQDE\n|QueueDoubleEntree\n}"];
+3 [shape=record,style=filled,label="{3 (I: 6, E: 1)|comparator\nsecretQAP\n|QueueAvecPriorite\n}"];
+4 [shape=record,style=filled,fillcolor=lightblue,label="{4 (I: 4, E: 3)|peek\npool\n|}"];
+5 [shape=record,style=filled,fillcolor=lightblue,label="{5 (I: 3, E: 2)|get\n|}"];
+6 [shape=record,style=filled,fillcolor=lightblue,label="{6 (I: 2, E: 4)|add\nisEmpty\n|}"];
+	0 -> 4
+	0 -> 5
+	1 -> 5
+	2 -> 4
+	3 -> 4
+	4 -> 6
+	5 -> 6
+}
