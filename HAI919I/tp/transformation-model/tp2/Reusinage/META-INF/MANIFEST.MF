@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Reusinage
+Bundle-SymbolicName: Reusinage; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi;bundle-version="2.16.0",
+ org.eclipse.uml2;bundle-version="5.5.2",
+ org.eclipse.uml2.uml;bundle-version="5.5.0"

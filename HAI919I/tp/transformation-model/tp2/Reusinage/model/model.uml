@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TqNy8Cw7Eey-QbazWlrUkw" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_TrrykCw7Eey-QbazWlrUkw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_rYEvYCw7Eey-QbazWlrUkw" name="Package1" visibility="public" URI="fr.thomascanta">
+    <packagedElement xmi:type="uml:Class" xmi:id="_aunCwCw7Eey-QbazWlrUkw" name="Enseignant"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NxBVgCw8Eey-QbazWlrUkw" name="P1">
+      <packagedElement xmi:type="uml:Class" xmi:id="_NxBVgSw8Eey-QbazWlrUkw" name="Enseignant">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NxBVgiw8Eey-QbazWlrUkw" name="Name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NxBVgyw8Eey-QbazWlrUkw" name="Numéro">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_QJFZECw8Eey-QbazWlrUkw" name="Package2" visibility="public"/>
+</uml:Model>
