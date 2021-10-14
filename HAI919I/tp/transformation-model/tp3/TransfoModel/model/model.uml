@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_O35bwCzxEeysQKso2jJ8gA" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_O6D-8CzxEeysQKso2jJ8gA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_S_T9ECzxEeysQKso2jJ8gA" name="PackageStateMachine">
+    <packagedElement xmi:type="uml:Class" xmi:id="_moL5wCz0EeysQKso2jJ8gA" name="State">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_0-gxACzyEeysQKso2jJ8gA" name="StateMachine">
+        <region xmi:type="uml:Region" xmi:id="_1mA14CzyEeysQKso2jJ8gA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_DZ6DkCzzEeysQKso2jJ8gA" source="_4s2rACzyEeysQKso2jJ8gA" target="_7CrS4CzyEeysQKso2jJ8gA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_vg8foCzzEeysQKso2jJ8gA" name="desc: m1[C]/m2" source="_7CrS4CzyEeysQKso2jJ8gA" target="_-7CrkCzyEeysQKso2jJ8gA">
+            <effect xmi:type="uml:Activity" xmi:id="_vPFMMCz2EeysQKso2jJ8gA" name="m2" specification="_boAe8Cz2EeysQKso2jJ8gA"/>
+            <trigger xmi:type="uml:Trigger" xmi:id="_y9PK4Cz0EeysQKso2jJ8gA" name="Trigger1" event="_yzwewCz0EeysQKso2jJ8gA"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_4s2rACzyEeysQKso2jJ8gA" name="Initial"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7CrS4CzyEeysQKso2jJ8gA" name="E1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_-7CrkCzyEeysQKso2jJ8gA" name="E2"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_oQmpECz0EeysQKso2jJ8gA" name="m1"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_boAe8Cz2EeysQKso2jJ8gA" name="m2" method="_vPFMMCz2EeysQKso2jJ8gA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_yzwewCz0EeysQKso2jJ8gA" name="CallEvent1" operation="_oQmpECz0EeysQKso2jJ8gA"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nUro0SzzEeysQKso2jJ8gA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nUro0izzEeysQKso2jJ8gA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
