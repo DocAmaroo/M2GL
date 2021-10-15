@@ -77,21 +77,59 @@ Information de connexions:
     username: admin
     password: 7kR9fu0L8ZYqEp4ZJVd
 
+### MAP seulement
 
-Old regions
+:point_right: Donnez toutes les informations sur les régions (de type old region) de la base
 
 ```mango
 function(doc){
   if (doc.type == 'old_region') {
-    emit(null, doc._id)
+    emit(doc.nom_reg, doc._id)
   }
 }
 ```
 
-Get communes informations
+:point-right: Donner les noms (clés) et latitude et longitude de chaque commune
+
 
 ```mango
 function (doc) {
-  if (doc.type == 'commune') { emit(doc.name, doc.longitude, doc.latitude); }
+  if (doc.type == 'commune') { 
+    emit(doc.nom, [doc.longitude, doc.latitude]); 
+  } 
 }
 ```
+
+:point-right: Donner le code insee (clé), le département, la latitude et la longitude de MONTPELLIER (nom
+de la commune)
+
+```mango
+function (doc) {
+  if (doc.type == 'commune' && doc.nom == 'MONTPELLIER') { emit(doc.dep, [doc.codeInsee, doc.longitude, doc.latitude]); }
+}
+```
+
+:point-right: Donnez le nom et le prénom de la présidente de la région Occitanie
+
+```mango
+function (doc) {
+  if (doc.type == 'region' && doc.nom_reg == 'Occitanie') { emit(doc.president.nom, doc.president.prenom); }
+}
+```
+
+### MAP et REDUCE
+
+:point-right: Donner le nombre de communes au total puis par département et enfin par région (old region)
+
+```mango
+function (doc) { // Group level 1 , reduce _sum
+  if(doc.type == "commune"){
+    emit("old reg :" + doc.old_reg,1);
+    emit("dep :" + doc.dep,1);
+    emit("communes",1);
+  }
+}
+```
+
+:point-right: Donner le nombre d’habitants par commune en 1985
+
