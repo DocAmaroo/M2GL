@@ -30,21 +30,8 @@
 
 <hr>
 
-🚩 **HAI914** ![0%](https://progress-bar.dev/0)
-
-👉 Relire les requêtes TP2
-
-<hr>
-
-🚩 **HAI916** ![10%](https://progress-bar.dev/10)
-
-👉 TP3 (Constraints) à faire en groupe | 📆 Lundi 18 oct. 8h
-
-<hr>
-
 🚩 **HAI919** ![0%](https://progress-bar.dev/0)
 
-👉 CC modèles, métamodèles, métamétamodèle  | 📆 13 oct. 16h45
 👉 TD 3 et 4 (groupe de 2) | 📆 Avant 27 oct. 23h.
 
 <hr>
@@ -54,8 +41,7 @@
 👉 Relire le cours  
 👉 Souffrir fort
 
-🚩 **HAI934** ![75%](https://progress-bar.dev/75)
+🚩 **HAI934** ![0%](https://progress-bar.dev/0)
 
-👉 Revoir vite euf les diapos et exos pour préparer le CC
-
+👉 CC sur tout le programme | 📆 27 oct. | 📚 Autorisé
 <hr>
