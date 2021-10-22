@@ -24,9 +24,16 @@
 
 # TODO LIST
 
-🚩 **HAI913I** ![60%](https://progress-bar.dev/60)
+🚩 **HAI912I** ![60%](https://progress-bar.dev/60)
 
-👉 Finir le TP2 Partie 2 | 📆 Avant 19 oct. 9h  
+👉 Finir le TP4 | 📆 Avant 26 oct.
+
+<hr>
+
+🚩 **HAI916I** ![5%](https://progress-bar.dev/20)
+
+👉 Refaire le TP1 avec du backtracking | 📆 31 oct. 23h
+👉 Finir le TP2 | 📆 31 oct. 23h
 
 <hr>
 
@@ -44,4 +51,5 @@
 🚩 **HAI934** ![0%](https://progress-bar.dev/0)
 
 👉 CC sur tout le programme | 📆 27 oct. | 📚 Autorisé
+
 <hr>
