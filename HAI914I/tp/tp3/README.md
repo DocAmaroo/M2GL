@@ -122,14 +122,24 @@ function (doc) {
 :point-right: Donner le nombre de communes au total puis par département et enfin par région (old region)
 
 ```mango
-function (doc) { // Group level 1 , reduce _sum
+function (doc) { // Group level 1 , reduce _count
   if(doc.type == "commune"){
-    emit("old reg :" + doc.old_reg,1);
-    emit("dep :" + doc.dep,1);
-    emit("communes",1);
+    emit([doc.old_reg, doc.dep, doc._id], 1);
   }
 }
 ```
 
 :point-right: Donner le nombre d’habitants par commune en 1985
+
+```mango
+function(doc) { // Group level 1 , reduce _sum
+  if (doc.type==’commune’)
+  for (var i = 0; i<doc.populations.length; i++){ 
+    var pop = doc.populations[i];
+    if (pop.pop_1985)
+      emit([doc.old_reg, doc.dep, doc.nom], pop.pop_1985);
+  }
+}
+```
+
 
