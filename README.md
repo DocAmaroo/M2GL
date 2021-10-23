@@ -22,14 +22,6 @@
 
 🚧 Stage...
 
-# TODO LIST
-
-🚩 **HAI912I** ![60%](https://progress-bar.dev/60)
-
-👉 Finir le TP4 | 📆 Avant 26 oct.
-
-<hr>
-
 🚩 **HAI916I** ![5%](https://progress-bar.dev/20)
 
 👉 Refaire le TP1 avec du backtracking | 📆 31 oct. 23h
