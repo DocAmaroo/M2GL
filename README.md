@@ -22,6 +22,8 @@
 
 🚧 Stage...
 
+# TODO
+
 🚩 **HAI916I** ![5%](https://progress-bar.dev/20)
 
 👉 Refaire le TP1 avec du backtracking | 📆 31 oct. 23h
