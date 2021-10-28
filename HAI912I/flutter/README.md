@@ -1,4 +1,4 @@
-# HAI912I - Dev. mobile avancé, IoT et embarqué
+# HAI912I - Dev. mobile avancé, IoT et embarqué | Partie 1
 
 ## Liens
 
