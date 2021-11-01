@@ -24,26 +24,15 @@
 
 # TODO
 
-🚩 **HAI916I** ![5%](https://progress-bar.dev/20)
-
-👉 Refaire le TP1 avec du backtracking | 📆 31 oct. 23h  
-👉 Finir le TP2 | 📆 31 oct. 23h
-
-<hr>
-
 🚩 **HAI919** ![0%](https://progress-bar.dev/0)
 
-👉 TD 3 et 4 (groupe de 2) | 📆 Avant 27 oct. 23h.
+👉 TD 3 et 4 (groupe de 2) | 📆 Avant 15 nov. 23h.
 
 <hr>
 
-🚩 **HAI931** ![20%](https://progress-bar.dev/20)
+🚩 **HAI931** ![0%](https://progress-bar.dev/20)
 
 👉 Relire le cours  
 👉 Souffrir fort
-
-🚩 **HAI934** ![0%](https://progress-bar.dev/0)
-
-👉 CC sur tout le programme | 📆 27 oct. | 📚 Autorisé
 
 <hr>
