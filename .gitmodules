@@ -5,5 +5,5 @@
 	path = HAI912I/tp/tp2/WeatherApp
 	url = git@github.com:DocAmaroo/WeatherApp.git
 [submodule "HAI912I/tp/tp2/QuizzApp"]
+	path = HAI912I/tp/tp2/QuizzApp
         url = git@github.com:DocAmaroo/QuizzApp.git
-        active = true
