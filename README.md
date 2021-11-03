@@ -24,6 +24,12 @@
 
 # TODO
 
+🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+
+👉 TP 3 - Compréhension logicielle | 📆 Avant 9 nov. 9h.
+
+<hr>
+
 🚩 **HAI919** ![0%](https://progress-bar.dev/0)
 
 👉 TD 3 et 4 (groupe de 2) | 📆 Avant 15 nov. 23h.
