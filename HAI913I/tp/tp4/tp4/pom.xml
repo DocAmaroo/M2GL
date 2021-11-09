@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>hai913i</groupId>
+  <artifactId>tp3</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <name>hai913i.tp3</name>
+  <description>TP3 du module HAI9113I - Evolution et Restructuration</description>
+  <dependencies>
+  	<dependency>
+	  <groupId>fr.inria.gforge.spoon</groupId>
+	  <artifactId>spoon-core</artifactId>
+	  <version>8.0.0</version>
+	</dependency>
+  </dependencies>
+</project>

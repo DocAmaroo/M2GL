@@ -1,0 +1,246 @@
+Static Call Graph
+Methods: 165.
+Invocations: 207.
+graphs.CallGraph::getNbInvocations:
+	---> invocations.keySet().stream().map(null).map(null)::flatMap (1 time(s))
+	---> invocations.keySet().stream().map(null)::map (1 time(s))
+	---> invocations.keySet().stream().map(null).map(null).flatMap(null).flatMapToLong(null)::sum (1 time(s))
+	---> invocations.keySet()::stream (1 time(s))
+	---> invocations.keySet().stream().map(null).map(null).flatMap(null)::flatMapToLong (1 time(s))
+	---> invocations::keySet (1 time(s))
+	---> invocations.keySet().stream()::map (1 time(s))
+
+graphs.StaticCallGraph::createCallGraph:
+	---> cls::accept (1 time(s))
+	---> partial::getMethods (1 time(s))
+	---> graph::addMethodAndInvocations (1 time(s))
+	---> graph::addInvocations (1 time(s))
+	---> StaticCallGraph::createCallGraph (1 time(s))
+	---> partial::getInvocations (1 time(s))
+	---> graph.parser::parseProject (1 time(s))
+	---> graph::addMethods (1 time(s))
+	---> cUnit::accept (1 time(s))
+	---> classCollector::getClasses (1 time(s))
+	---> methodCollector::getMethods (1 time(s))
+
+graphs.CallGraph::addInvocation:
+	---> methods::add (5 time(s))
+	---> invocations.get(source)::containsKey (1 time(s))
+	---> invocations::get (6 time(s))
+	---> invocations.get(source)::get (1 time(s))
+	---> invocations::put (2 time(s))
+	---> invocations.get(source)::put (4 time(s))
+	---> invocations::containsKey (2 time(s))
+
+main.AbstractMain::processUserInput:
+	---> System.err::println (3 time(s))
+	---> getClass()::getCanonicalName (3 time(s))
+	---> main.AbstractMain::getClass (3 time(s))
+
+graphs.CallGraph::log:
+	---> parser::getProjectPath (1 time(s))
+	---> this::toString (1 time(s))
+	---> loggerChain::log (1 time(s))
+	---> loggerChain::setFilePath (1 time(s))
+
+parsers.Parser::listJavaFiles:
+	---> file::getAbsolutePath (1 time(s))
+	---> javaFiles::add (1 time(s))
+	---> file::isDirectory (1 time(s))
+	---> parsers.Parser::listJavaFiles (1 time(s))
+	---> file::getName (1 time(s))
+	---> javaFiles::addAll (1 time(s))
+	---> folder::listFiles (1 time(s))
+	---> fileName::endsWith (1 time(s))
+
+parsers.EclipseJDTASTParser::parse:
+	---> parser::setSource (1 time(s))
+	---> FileUtils.readFileToString(sourceFile,platformCharset)::toCharArray (1 time(s))
+	---> FileUtils::readFileToString (1 time(s))
+	---> parser::createAST (1 time(s))
+
+parsers.Parser::listJavaProjectFiles:
+	---> parsers.Parser::listJavaFiles (1 time(s))
+	---> parsers.Parser::getProjectPath (1 time(s))
+
+main.AbstractMain::setTestProjectPath:
+	---> TEST_PROJECT_PATH::endsWith (1 time(s))
+	---> System.err::println (1 time(s))
+	---> projectFolder::exists (1 time(s))
+	---> inputReader::readLine (2 time(s))
+	---> System.out::println (1 time(s))
+
+utility.Utility::getClassFullyQualifiedName:
+	---> utility.CompilationUnit::getPackage (2 time(s))
+	---> utility.TypeDeclaration::getName (1 time(s))
+	---> typeDeclaration.getRoot()::getClass (1 time(s))
+	---> root.getPackage().getName()::getFullyQualifiedName (1 time(s))
+	---> root.getPackage()::getName (1 time(s))
+	---> typeDeclaration.getName()::getIdentifier (1 time(s))
+	---> utility.TypeDeclaration::getRoot (2 time(s))
+
+graphs.CallGraph::setLoggerChain:
+	---> loggerChain::setNextLogger (1 time(s))
+
+main.AbstractMain::verifyTestProjectPath:
+	---> System.err::println (1 time(s))
+	---> projectFolder::exists (1 time(s))
+	---> userInput::endsWith (1 time(s))
+	---> inputReader::readLine (1 time(s))
+
+graphs.CallGraph::addMethod:
+	---> methods::add (1 time(s))
+
+main.CallGraphMain::menu:
+	---> builder::append (4 time(s))
+	---> System.out::println (1 time(s))
+
+parsers.Parser::Parser:
+	---> parsers.Parser::configure (1 time(s))
+	---> System::getProperty (1 time(s))
+	---> parsers.Parser::setProjectPath (1 time(s))
+	---> parsers.Parser::setJREPath (1 time(s))
+
+graphs.CallGraph::getNbMethods:
+	---> methods::size (1 time(s))
+
+loggers.ErrorLogger::write:
+	---> System.err::println (1 time(s))
+	---> request::getMessage (1 time(s))
+
+graphs.CallGraph::addInvocations:
+	---> map.get(source)::keySet (1 time(s))
+	---> map::get (2 time(s))
+	---> map.get(source)::get (1 time(s))
+	---> this::addInvocation (1 time(s))
+	---> map::keySet (1 time(s))
+
+loggers.Logger::log:
+	---> request::getLevel (1 time(s))
+	---> this.level::value (1 time(s))
+	---> loggers.Logger::write (1 time(s))
+	---> nextLogger::log (1 time(s))
+	---> request.getLevel()::value (1 time(s))
+
+visitors.MethodDeclarationsCollector::visit:
+	---> methods::add (1 time(s))
+
+graphs.CallGraph::toString:
+	---> graphs.CallGraph::getNbInvocations (1 time(s))
+	---> builder::append (7 time(s))
+	---> invocations.get(source)::keySet (1 time(s))
+	---> methods::size (1 time(s))
+	---> invocations::get (2 time(s))
+	---> invocations.get(source)::get (1 time(s))
+	---> invocations::keySet (1 time(s))
+	---> builder::toString (1 time(s))
+
+main.CallGraphMain::processUserInput:
+	---> System.err::println (2 time(s))
+	---> e::printStackTrace (1 time(s))
+	---> callGraph::log (1 time(s))
+	---> StaticCallGraph::createCallGraph (1 time(s))
+	---> System.out::println (1 time(s))
+
+visitors.MethodInvocationsCollector::isEmpty:
+	---> methodInvocations::isEmpty (1 time(s))
+	---> superMethodInvocations::isEmpty (1 time(s))
+
+parsers.EclipseJDTASTParser::setParser:
+	---> parser::setCompilerOptions (1 time(s))
+	---> parsers.EclipseJDTASTParser::getJREPath (1 time(s))
+	---> JavaCore::getOptions (1 time(s))
+	---> ASTParser::newParser (1 time(s))
+	---> parser::setEnvironment (1 time(s))
+	---> parsers.EclipseJDTASTParser::getProjectPath (1 time(s))
+	---> parser::setBindingsRecovery (1 time(s))
+	---> parser::setKind (1 time(s))
+	---> parser::setUnitName (1 time(s))
+	---> parser::setResolveBindings (1 time(s))
+
+graphs.StaticCallGraph::getMethodInvocationName:
+	---> invocation::getExpression (1 time(s))
+	---> Utility::getClassFullyQualifiedName (1 time(s))
+	---> expr::resolveTypeBinding (1 time(s))
+	---> invocation.getName()::toString (3 time(s))
+	---> invocation::getName (3 time(s))
+	---> type::getQualifiedName (1 time(s))
+
+graphs.CallGraph::addMethods:
+	---> methods::addAll (1 time(s))
+
+processors.Processor::Processor:
+	---> processors.Processor::setParser (1 time(s))
+
+loggers.ConsoleLogger::write:
+	---> System.out::println (1 time(s))
+	---> request::getMessage (1 time(s))
+
+parsers.EclipseJDTASTParser::configure:
+	---> parsers.EclipseJDTASTParser::setParser (1 time(s))
+
+graphs.StaticCallGraph::addMethodAndInvocations:
+	---> Utility::getMethodFullyQualifiedName (1 time(s))
+	---> method::getBody (2 time(s))
+	---> this::addMethod (1 time(s))
+	---> this::addInvocations (1 time(s))
+	---> this::addSuperInvocations (1 time(s))
+
+graphs.StaticCallGraph::addSuperInvocations:
+	---> this::addMethod (1 time(s))
+	---> this::addInvocation (1 time(s))
+	---> invocationCollector::getSuperMethodInvocations (1 time(s))
+	---> superInvocation::getName (1 time(s))
+	---> superInvocation.getName()::getFullyQualifiedName (1 time(s))
+
+visitors.ClassDeclarationsCollector::visit:
+	---> typeDeclaration::isInterface (1 time(s))
+	---> classes::add (1 time(s))
+
+loggers.FileLogger::write:
+	---> e::printStackTrace (1 time(s))
+	---> writer::append (1 time(s))
+	---> System.out::println (1 time(s))
+	---> request::getMessage (2 time(s))
+
+parsers.EclipseJDTASTParser::parseProject:
+	---> cUnits::add (1 time(s))
+	---> parsers.EclipseJDTASTParser::listJavaProjectFiles (1 time(s))
+	---> parsers.EclipseJDTASTParser::parse (1 time(s))
+
+main.CallGraphMain::main:
+	---> e::printStackTrace (2 time(s))
+	---> main::menu (1 time(s))
+	---> main::processUserInput (1 time(s))
+	---> main.CallGraphMain::setTestProjectPath (1 time(s))
+	---> inputReader::readLine (1 time(s))
+	---> userInput::equals (1 time(s))
+	---> Thread::sleep (1 time(s))
+	---> main.CallGraphMain::verifyTestProjectPath (1 time(s))
+
+graphs.CallGraph::CallGraph:
+	---> graphs.CallGraph::setLoggerChain (1 time(s))
+
+graphs.CallGraph::print:
+	---> this::toString (1 time(s))
+	---> loggerChain::log (1 time(s))
+
+utility.Utility::getMethodFullyQualifiedName:
+	---> java.lang.StringBuffer::toString (1 time(s))
+	---> java.lang.StringBuffer::append (3 time(s))
+	---> utility.Utility::getClassFullyQualifiedName (1 time(s))
+	---> utility.MethodDeclaration::getName (1 time(s))
+
+visitors.MethodInvocationsCollector::visit:
+	---> methodInvocations::add (1 time(s))
+	---> visit (2 time(s))
+	---> superMethodInvocations::add (1 time(s))
+
+graphs.StaticCallGraph::addInvocations:
+	---> graphs.StaticCallGraph::getMethodInvocationName (1 time(s))
+	---> this::addMethod (1 time(s))
+	---> this::addInvocation (1 time(s))
+	---> method::accept (1 time(s))
+	---> invocationCollector::getMethodInvocations (1 time(s))
+
+
