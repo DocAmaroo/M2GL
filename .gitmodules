@@ -7,3 +7,6 @@
 [submodule "HAI912I/tp/tp2/QuizzApp"]
 	path = HAI912I/tp/tp2/QuizzApp
         url = git@github.com:DocAmaroo/QuizzApp.git
+[submodule "HAI916I/tp/tp6/TP-Master-MTP-GL-IA4GL"]
+	path = HAI916I/tp/tp6/TP-Master-MTP-GL-IA4GL
+	url = https://github.com/qperez/TP-Master-MTP-GL-IA4GL.git

@@ -1,4 +1,4 @@
-package qengine.program;
+package qengine.program.parsers;
 
 import org.eclipse.rdf4j.model.Statement;
 import org.eclipse.rdf4j.rio.helpers.AbstractRDFHandler;

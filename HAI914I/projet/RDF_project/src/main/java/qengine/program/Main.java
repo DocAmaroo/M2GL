@@ -1,9 +1,6 @@
 package qengine.program;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
@@ -19,6 +16,9 @@ import org.eclipse.rdf4j.query.parser.sparql.SPARQLParser;
 import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
+import qengine.program.logs.Log;
+import qengine.program.parsers.DictionaryRDFHandler;
+import qengine.program.parsers.MainRDFHandler;
 
 /**
  * Programme simple lisant un fichier de requête et un fichier de données.
@@ -38,6 +38,8 @@ import org.eclipse.rdf4j.rio.Rio;
  */
 final class Main {
 	static final String baseURI = null;
+	static final String queryFilename = "sample_query.queryset";
+	static final String dataFilename = "sample_data.nt";
 
 	/**
 	 * Votre répertoire de travail où vont se trouver les fichiers à lire
@@ -47,12 +49,12 @@ final class Main {
 	/**
 	 * Fichier contenant les requêtes sparql
 	 */
-	static final String queryFile = workingDir + "sample_query.queryset";
+	static final String queryFile = workingDir + queryFilename;
 
 	/**
 	 * Fichier contenant des données rdf
 	 */
-	static final String dataFile = workingDir + "sample_data.nt";
+	static final String dataFile = workingDir + dataFilename;
 
 	// ========================================================================
 
@@ -60,6 +62,8 @@ final class Main {
 	 * Méthode utilisée ici lors du parsing de requête sparql pour agir sur l'objet obtenu.
 	 */
 	public static void processAQuery(ParsedQuery query) {
+
+
 		List<StatementPattern> patterns = StatementPatternCollector.process(query.getTupleExpr());
 
 		System.out.println("first pattern : " + patterns.get(0));
@@ -81,8 +85,13 @@ final class Main {
 	 * Entrée du programme
 	 */
 	public static void main(String[] args) throws Exception {
+		System.out.println("# Parsing data ----------------------------------------");
 		parseData();
+
+		System.out.println("# Parsing queries ----------------------------------------");
 		parseQueries();
+
+		Log.writeOutput();
 	}
 
 	// ========================================================================
@@ -135,10 +144,16 @@ final class Main {
 			RDFParser rdfParser = Rio.createParser(RDFFormat.NTRIPLES);
 
 			// On utilise notre implémentation de handler
-			rdfParser.setRDFHandler(new MainRDFHandler());
+			DictionaryRDFHandler dictionaryRDFHandler = new DictionaryRDFHandler();
+			rdfParser.setRDFHandler(dictionaryRDFHandler);
+
+			long startTimer = System.currentTimeMillis();
 
 			// Parsing et traitement de chaque triple par le handler
 			rdfParser.parse(dataReader, baseURI);
+
+			Log.setExecTimeDictionary(System.currentTimeMillis() - startTimer);
+			System.out.println("[+] Dictionary created!\n");
 		}
 	}
 }
