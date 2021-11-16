@@ -1,4 +1,4 @@
-# HAI919 TP OCL
+# HAI919 TP 1 OCL
 
 ## Exercice 1
 
