@@ -1,0 +1,213 @@
+Static Call Graph
+Methods: 121.
+Invocations: 187.
+step2.Parser::main:
+	---> step2.Parser::getPackages (1 time(s))
+	---> step2.Parser::classesWithMoreMethods (1 time(s))
+	---> Math::ceil (8 time(s))
+	---> content::toCharArray (1 time(s))
+	---> packages::addAll (1 time(s))
+	---> classesMethods::size (1 time(s))
+	---> step2.Parser::getNumberOfAttributs (1 time(s))
+	---> step2.Parser::addClassAttributes (1 time(s))
+	---> step2.Parser::parse (1 time(s))
+	---> classesAttributes::size (1 time(s))
+	---> step2.Parser::getNumberOfLines (1 time(s))
+	---> FileUtils::readFileToString (1 time(s))
+	---> step2.Parser::classesWithMoreThanXMethods (1 time(s))
+	---> step2.Parser::getNumberOfClasses (1 time(s))
+	---> step2.Parser::inBoth (1 time(s))
+	---> step2.Parser::getNumberOfLinesByMethods (1 time(s))
+	---> step2.Parser::listJavaFilesForFolder (1 time(s))
+	---> packages::size (1 time(s))
+	---> System.out::println (7 time(s))
+	---> step2.Parser::getNumberOfMethods (1 time(s))
+	---> step2.Parser::addClassMethods (1 time(s))
+	---> step2.Parser::classesWithMoreAttributes (1 time(s))
+
+step2.Parser::printVariableInfo:
+	---> parse::accept (1 time(s))
+	---> method::accept (1 time(s))
+	---> System.out::println (1 time(s))
+	---> variableDeclarationFragment::getName (1 time(s))
+	---> visitor1::getMethods (1 time(s))
+	---> visitor2::getVariables (1 time(s))
+	---> variableDeclarationFragment::getInitializer (1 time(s))
+
+step2.PackageDeclarationVisitor::visit:
+	---> packages::add (1 time(s))
+	---> visit (1 time(s))
+
+step2.Parser::getPackages:
+	---> visitor.getPackages().stream().map(null)::collect (1 time(s))
+	---> parse::accept (1 time(s))
+	---> visitor.getPackages().stream()::map (1 time(s))
+	---> Collectors::toList (1 time(s))
+	---> visitor::getPackages (1 time(s))
+	---> visitor.getPackages()::stream (1 time(s))
+
+step2.Parser::classesWithMoreMethods:
+	---> listClassesWithMoreMethods::addAll (1 time(s))
+	---> classesMethods.entrySet()::stream (1 time(s))
+	---> Collectors::toList (1 time(s))
+	---> Collections::max (1 time(s))
+	---> classesMethods::values (1 time(s))
+	---> classesMethods::entrySet (1 time(s))
+	---> System.out::print (2 time(s))
+	---> classesMethods.entrySet().stream().filter(null)::map (1 time(s))
+	---> classesMethods::remove (1 time(s))
+	---> classesMethods.entrySet().stream()::filter (1 time(s))
+	---> listClassesWithMoreMethods::size (2 time(s))
+	---> System.out::println (1 time(s))
+	---> classesMethods.entrySet().stream().filter(null).map(null)::collect (1 time(s))
+	---> listClassesWithMoreMethods::get (1 time(s))
+
+step2.Parser::getNumberOfAttributs:
+	---> parse::accept (1 time(s))
+	---> visitor.getAttribus()::size (1 time(s))
+	---> visitor::getAttribus (1 time(s))
+
+step2.Parser::addClassAttributes:
+	---> type::getName (1 time(s))
+	---> visitor::getTypes (1 time(s))
+	---> parse::accept (1 time(s))
+	---> classesAttributes::put (1 time(s))
+	---> String::valueOf (1 time(s))
+	---> type::getFields (1 time(s))
+
+step2.Parser::parse:
+	---> parser::setCompilerOptions (1 time(s))
+	---> JavaCore::getOptions (1 time(s))
+	---> ASTParser::newParser (1 time(s))
+	---> parser::setEnvironment (1 time(s))
+	---> parser::setSource (1 time(s))
+	---> parser::setBindingsRecovery (1 time(s))
+	---> parser::setKind (1 time(s))
+	---> parser::setUnitName (1 time(s))
+	---> parser::setResolveBindings (1 time(s))
+	---> parser::createAST (1 time(s))
+
+step2.Parser::printMethodInvocationInfo:
+	---> methodInvocation::getName (1 time(s))
+	---> parse::accept (1 time(s))
+	---> visitor2::getMethods (1 time(s))
+	---> method::getName (1 time(s))
+	---> method::accept (1 time(s))
+	---> System.out::println (1 time(s))
+	---> visitor1::getMethods (1 time(s))
+
+step2.MethodDeclarationVisitor::visit:
+	---> methods::add (1 time(s))
+	---> visit (1 time(s))
+
+step2.Parser::getNumberOfLines:
+	---> parse::accept (1 time(s))
+	---> parse::getLineNumber (1 time(s))
+	---> visitor::getLength (1 time(s))
+
+step2.Parser::classesWithMoreThanXMethods:
+	---> listClassesWithMoreThanXMethods::get (1 time(s))
+	---> System.out::print (2 time(s))
+	---> classesMethods.entrySet().stream().filter(null)::map (1 time(s))
+	---> classesMethods.entrySet().stream()::filter (1 time(s))
+	---> classesMethods.entrySet()::stream (1 time(s))
+	---> Collectors::toList (1 time(s))
+	---> listClassesWithMoreThanXMethods::size (1 time(s))
+	---> System.out::println (1 time(s))
+	---> listClassesWithMoreThanXMethods::addAll (1 time(s))
+	---> classesMethods.entrySet().stream().filter(null).map(null)::collect (1 time(s))
+	---> classesMethods::entrySet (1 time(s))
+
+step2.Parser::getNumberOfClasses:
+	---> visitor::getTypes (1 time(s))
+	---> parse::accept (1 time(s))
+	---> visitor.getTypes()::size (1 time(s))
+
+step2.TypeDeclarationVisitor::visit:
+	---> Arrays::asList (1 time(s))
+	---> node::getLength (1 time(s))
+	---> node::getFields (1 time(s))
+	---> types::add (1 time(s))
+	---> visit (1 time(s))
+
+step2.Parser::inBoth:
+	---> listClassesInBoth::size (1 time(s))
+	---> listClassesInBoth::add (2 time(s))
+	---> listClassesWithMoreAttributes::get (2 time(s))
+	---> System.out::print (2 time(s))
+	---> listClassesWithMoreAttributes::size (2 time(s))
+	---> listClassesInBoth::get (1 time(s))
+	---> listClassesWithMoreMethods::size (2 time(s))
+	---> listClassesWithMoreMethods::contains (1 time(s))
+	---> System.out::println (1 time(s))
+	---> listClassesWithMoreAttributes::contains (1 time(s))
+	---> listClassesWithMoreMethods::get (2 time(s))
+
+step2.FieldAccessVisitor::visit:
+	---> step2.SimpleName::isDeclaration (1 time(s))
+	---> java.util.List<step2.SimpleName>::add (1 time(s))
+	---> step2.SimpleName::resolveBinding (1 time(s))
+	---> visit (1 time(s))
+
+step2.Parser::printMethodInfo:
+	---> parse::accept (1 time(s))
+	---> visitor::getMethods (1 time(s))
+	---> method::getName (1 time(s))
+	---> method::getReturnType2 (1 time(s))
+	---> System.out::println (1 time(s))
+
+step2.Parser::getNumberOfLinesByMethods:
+	---> parse::accept (1 time(s))
+	---> parse::getLineNumber (2 time(s))
+	---> method::getStartPosition (1 time(s))
+	---> visitor::getMethods (1 time(s))
+	---> method::getLength (1 time(s))
+
+step2.VariableDeclarationFragmentVisitor::visit:
+	---> variables::add (1 time(s))
+	---> visit (1 time(s))
+
+step2.Parser::listJavaFilesForFolder:
+	---> javaFiles::add (1 time(s))
+	---> step2.Parser::listJavaFilesForFolder (1 time(s))
+	---> javaFiles::addAll (1 time(s))
+	---> fileEntry::getName (1 time(s))
+	---> folder::listFiles (1 time(s))
+	---> fileEntry::isDirectory (1 time(s))
+	---> fileEntry.getName()::contains (1 time(s))
+
+step2.MethodInvocationVisitor::visit:
+	---> superMethods::add (1 time(s))
+	---> methods::add (1 time(s))
+	---> visit (2 time(s))
+
+step2.Parser::getNumberOfMethods:
+	---> parse::accept (1 time(s))
+	---> visitor::getMethods (1 time(s))
+	---> visitor.getMethods()::size (1 time(s))
+
+step2.Parser::addClassMethods:
+	---> type::getName (1 time(s))
+	---> visitor::getTypes (1 time(s))
+	---> parse::accept (1 time(s))
+	---> classesMethods::put (1 time(s))
+	---> String::valueOf (1 time(s))
+	---> type::getMethods (1 time(s))
+
+step2.Parser::classesWithMoreAttributes:
+	---> classesAttributes::remove (1 time(s))
+	---> classesAttributes::entrySet (1 time(s))
+	---> classesAttributes::values (1 time(s))
+	---> listClassesWithMoreAttributes::size (2 time(s))
+	---> listClassesWithMoreAttributes::addAll (1 time(s))
+	---> classesAttributes.entrySet().stream().filter(null).map(null)::collect (1 time(s))
+	---> Collectors::toList (1 time(s))
+	---> classesAttributes.entrySet().stream().filter(null)::map (1 time(s))
+	---> Collections::max (1 time(s))
+	---> listClassesWithMoreAttributes::get (1 time(s))
+	---> classesAttributes.entrySet().stream()::filter (1 time(s))
+	---> classesAttributes.entrySet()::stream (1 time(s))
+	---> System.out::print (2 time(s))
+	---> System.out::println (1 time(s))
+
+

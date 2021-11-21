@@ -26,7 +26,23 @@
 
 🚩 **HAI913** ![0%](https://progress-bar.dev/0)
 
-👉 TP 3 - Compréhension logicielle | 📆 Avant 9 nov. 9h.
+👉 TP 4 - Celui de bachar | 📆 Avant 6 dec. 9h.
+
+<hr>
+
+🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+
+👉 Evaluation des requêtes en étoile : code + rapport 3 pages | 📆 Avant 25 nov.
+
+<hr>
+
+
+🚩 **HAI916** ![0%](https://progress-bar.dev/0)
+
+👉 Rendu TP Python  
+📆 30 nov.  
+📚 Rendre le notebook (par binôme, pas oublié les noms)  
+📧 quentin.perez@mines-ales.fr
 
 <hr>
 
@@ -40,5 +56,6 @@
 
 👉 Relire le cours  
 👉 Souffrir fort
+👉 On est passé au CLisp maintenant
 
 <hr>
