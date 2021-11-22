@@ -4,22 +4,46 @@
 
 🔗 [Moodle](https://moodle.umontpellier.fr/course/view.php?id=22507)
 
-## Introduction
+## Préambule
 
-💡 `Scalabilité horizontal` &rarr; ajout de machine => meilleur scalabilité.
+### Quand passer au NoSQL ?
 
-💡 `Réplication` &rarr; avoir un code toujours valide et apporter des données aux plus proches de l'usagé.
+* évolution fréquent de schémas
+  * entités ayant diverses carac. souvent non renseignées
+  * nombreuses associations [1..*] aux extrémités
+* lecture/écriture très élevé
+* données distribuées
 
-👉 Voir Agrégat, diapo 16.
+### Grands principes du NoSQL
 
-    clé/valeur &rarr; aucune complexité
+* Simplicité
+* Flexibilité
+* Efficacité
+* Passage à l'échelle
+  * partitionnement dynamique
+  * réplication à large échelle
+  * architecture décentralisée
 
-    column &rarr; complexe
+### Principe CAP
 
-    Document &rarr; complexité dans le doc.
+👉 Constat de Brewer: aucun système distribué ne peut satisfaire en même temps les principes C, A et P (au mieux 2 sur les 3)
 
-💡 `Persistance` &rarr; Façon de rendre les données pérennes sur le long terme
+* Consistency (cohérence)
+* Availability (disponibilité)
+* Partition tolerance (recouvrement des nœuds)
 
-👉 Voir illusation Neo4J, diapo 33.
+![Positionnement des systèmes / CAP](assets/pos_sys_CAP.png)
 
-👉 Clauses principale & exemple Cypher, diapo 41.
+### Typologie
+
+* Principe de base
+  * Système clé/valeur &rarr; aucune complexité  
+  * Système orienté colonne &rarr; complexe  
+  * Système orienté document &rarr; complexité dans le document.
+* Système orienté graphe
+
+## Cypher & Neo4J
+
+👉 Schema-less ([voir diapo 36](cours/cours1.pdf))
+
+👉 Clauses principale & exemple Cypher ([voir diapo 41 à 57](cours/cours1.pdf)).
