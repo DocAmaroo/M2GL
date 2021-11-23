@@ -14,6 +14,15 @@
 * lecture/écriture très élevé
 * données distribuées
 
+
+`Persistance Polyglotte`: exprime l'idée que les applications informatiques devraient être écrites dans un mélange de différents langages de programmation, afin de tirer parti du fait que différents langages conviennent à la résolution de différents problèmes. Ce même concept peut s'appliquer aux bases de données : une application peut communiquer avec différentes bases de données, en utilisant chacune d'entre elles pour ce qu'elle sait faire de mieux afin d'atteindre un objectif final, d'où le terme de persistance polyglotte.
+
+`Scalabilité`: La scalabilité d'une base de donnée est sa capacité à s'étendre sur plusieurs serveurs au lieu d'être limitée à un seul. Ainsi, il est théoriquement possible, d'augmenter à l'infini, les capacités de stockage et de traitement de la base en rajoutant des serveurs. De cette façon, les capacités de l'outil augmentent proportionnellement au nombre d'utilisateurs et à la quantité de données à traiter.
+
+`Réplication` est essentiellement destinée à pallier les pannes en dupliquant une collection sur plusieurs serveurs et en permettant donc qu’un serveur prenne la relève quand un autre vient à faillir.
+
+`Partitionnement` c'est de la fragmentation concrètement.
+
 ### Grands principes du NoSQL
 
 * Simplicité
@@ -28,9 +37,9 @@
 
 👉 Constat de Brewer: aucun système distribué ne peut satisfaire en même temps les principes C, A et P (au mieux 2 sur les 3)
 
-* Consistency (cohérence)
-* Availability (disponibilité)
-* Partition tolerance (recouvrement des nœuds)
+* `Consistency` (cohérence) : toute modification de donnée est suivie d'effet pour tous les nœuds du système.
+* `Availability` (disponibilité): toute requête émise et traitée par un nœud du système, reçoit une réponse (même en situation d'échec à produire une réponse)
+* `Partition tolerance` (recouvrement des nœuds): assurer une continuité du fonctionnement en cas d'ajout/suppression de nœuds du système
 
 ![Positionnement des systèmes / CAP](assets/pos_sys_CAP.png)
 

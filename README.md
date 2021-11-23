@@ -26,13 +26,13 @@
 
 🚩 **HAI913** ![0%](https://progress-bar.dev/0)
 
-👉 TP 4 - Celui de bachar | 📆 Avant 6 dec. 9h.
+👉 TP 5 | 📆 Avant 6 dec. 9h.
 
 <hr>
 
-🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+🚩 **HAI914** ![0%](https://progress-bar.dev/0)
 
-👉 Evaluation des requêtes en étoile : code + rapport 3 pages | 📆 Avant 25 nov.
+👉 Evaluation des requêtes en étoile : code + rapport 3 pages | 📆 Avant 28 nov.
 
 <hr>
 
@@ -43,12 +43,6 @@
 📆 30 nov.  
 📚 Rendre le notebook (par binôme, pas oublié les noms)  
 📧 quentin.perez@mines-ales.fr
-
-<hr>
-
-🚩 **HAI919** ![0%](https://progress-bar.dev/0)
-
-👉 TD 3 et 4 (groupe de 2) | 📆 Avant 15 nov. 23h.
 
 <hr>
 
