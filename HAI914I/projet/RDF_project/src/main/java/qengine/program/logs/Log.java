@@ -1,5 +1,7 @@
 package qengine.program.logs;
 
+import qengine.program.models.ExecutionTime;
+
 import java.io.*;
 
 public class Log {
@@ -9,7 +11,7 @@ public class Log {
      */
     private static final String FOLDER = "output";
     private static final String FILENAME = "logs";
-    private static final String FILE_EXTENSION = "txt";
+    private static final String FILE_EXTENSION = "csv";
 
 
     /**
@@ -48,12 +50,12 @@ public class Log {
     /**
      * The execution time for te dictionary instantiation, by default is -1
      */
-    public static long EXEC_TIME_DICTIONARY = -1;
+    public static ExecutionTime EXEC_TIME_DICTIONARY = new ExecutionTime("Dictionary");;
 
     /**
      * The execution time for te indexation instantiation, by default is -1
      */
-    public static long EXEC_TIME_INDEXATION = -1;
+    public static ExecutionTime EXEC_TIME_INDEXATION = new ExecutionTime("Indexation");
 
     /**
      * Default value if the data value is not available
@@ -62,44 +64,43 @@ public class Log {
 
 
     public static void setExecTimeDictionary(long execTimeDictionary) {
-        EXEC_TIME_DICTIONARY = execTimeDictionary;
-        System.out.println(toStringExecTimeDictionary());
+        EXEC_TIME_DICTIONARY.setValue(execTimeDictionary);
     }
 
     public static void setExecTimeIndexation(long execTimeIndexation) {
-        EXEC_TIME_DICTIONARY = execTimeIndexation;
-        System.out.println(toStringExecTimeIndexation());
+        EXEC_TIME_INDEXATION.setValue(execTimeIndexation);
     }
-
-    public static String toStringExecTimeDictionary() {
-        return "[i] EXECUTION TIME | dictionary: " +
-                (EXEC_TIME_DICTIONARY != -1 ? EXEC_TIME_DICTIONARY : UNAVAILABLE) + "ms";
-    }
-
-    public static String toStringExecTimeIndexation() {
-        return "[i] EXECUTION TIME | indexation: " +
-                (EXEC_TIME_INDEXATION != -1 ? EXEC_TIME_INDEXATION : UNAVAILABLE) + "ms";
-    }
-
     // ----------------------------------------------------------------------
 
     /**
-     * Write all the logs to output
-     * @throws IOException
+     * Save all the logs to the output file
      */
-    public static void writeOutput() throws IOException {
-        System.out.println("# Logs ----------------------------------------");
+    public static void save() throws IOException {
+        displayAllLogs();
 
-        System.out.println(toStringExecTimeDictionary());
-        OUTPUT_FILE.println(toStringExecTimeDictionary());
+        OUTPUT_FILE.println(csvHeader());
+        OUTPUT_FILE.println(EXEC_TIME_DICTIONARY.toCSV());
+        OUTPUT_FILE.println(EXEC_TIME_INDEXATION.toCSV());
 
-        System.out.println("[+] output successfully saved on: " + getOutputPath());
+        System.out.println("\n[+] Logs have been successfully saved on: " + getOutputPath());
         closeFileBuffer();
+    }
+
+    public static String csvHeader() {
+        return "Type,Key,Value";
+    }
+
+    /**
+     * Display all the logs on the console
+     */
+    public static void displayAllLogs() {
+        System.out.println("\n\n# LOGS ----------------------------------------");
+        System.out.println(EXEC_TIME_DICTIONARY);
+        System.out.println(EXEC_TIME_INDEXATION);
     }
 
     /**
      * Close properly all file reader
-     * @throws IOException
      */
     public static void closeFileBuffer() throws IOException {
         OUTPUT_FILE.close();

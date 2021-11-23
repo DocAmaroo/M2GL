@@ -18,24 +18,10 @@ import org.eclipse.rdf4j.rio.RDFParser;
 import org.eclipse.rdf4j.rio.Rio;
 import qengine.program.logs.Log;
 import qengine.program.parsers.DictionaryRDFHandler;
+import qengine.program.parsers.IndexationRDFHandler;
 import qengine.program.parsers.MainRDFHandler;
+import qengine.program.utils.Utils;
 
-/**
- * Programme simple lisant un fichier de requête et un fichier de données.
- * 
- * <p>
- * Les entrées sont données ici de manière statique,
- * à vous de programmer les entrées par passage d'arguments en ligne de commande comme demandé dans l'énoncé.
- * </p>
- * 
- * <p>
- * Le présent programme se contente de vous montrer la voie pour lire les triples et requêtes
- * depuis les fichiers ; ce sera à vous d'adapter/réécrire le code pour finalement utiliser les requêtes et interroger les données.
- * On ne s'attend pas forcémment à ce que vous gardiez la même structure de code, vous pouvez tout réécrire.
- * </p>
- * 
- * @author Olivier Rodriguez <olivier.rodriguez1@umontpellier.fr>
- */
 final class Main {
 	static final String baseURI = null;
 	static final String queryFilename = "sample_query.queryset";
@@ -56,6 +42,9 @@ final class Main {
 	 */
 	static final String dataFile = workingDir + dataFilename;
 
+	static final Dictionary dictionary = Dictionary.getInstance();
+
+	static final Indexation indexation = Indexation.getInstance();
 	// ========================================================================
 
 	/**
@@ -91,7 +80,11 @@ final class Main {
 		System.out.println("# Parsing queries ----------------------------------------");
 		parseQueries();
 
-		Log.writeOutput();
+		indexation.displayIndexByName("spo");
+		indexation.displayIndexByName("sop");
+
+		// Display on the console and save the logs
+		Log.save();
 	}
 
 	// ========================================================================
@@ -139,21 +132,40 @@ final class Main {
 	 */
 	private static void parseData() throws FileNotFoundException, IOException {
 
+		// Utiliser pour stocker le temps de départ et de fin d'évaluation
+		long startTimer;
+		long endTimer;
+
+		// Mise en place du dictionnaire --------------------------------------------------
 		try (Reader dataReader = new FileReader(dataFile)) {
-			// On va parser des données au format ntriples
 			RDFParser rdfParser = Rio.createParser(RDFFormat.NTRIPLES);
 
-			// On utilise notre implémentation de handler
 			DictionaryRDFHandler dictionaryRDFHandler = new DictionaryRDFHandler();
 			rdfParser.setRDFHandler(dictionaryRDFHandler);
 
-			long startTimer = System.currentTimeMillis();
-
-			// Parsing et traitement de chaque triple par le handler
+			startTimer = Utils.getCurrentTime();
 			rdfParser.parse(dataReader, baseURI);
 
-			Log.setExecTimeDictionary(System.currentTimeMillis() - startTimer);
-			System.out.println("[+] Dictionary created!\n");
+			endTimer = System.currentTimeMillis() - startTimer;
+			System.out.println("[+] Dictionary done! ("+endTimer+"ms)");
+			Log.setExecTimeDictionary(endTimer);
 		}
+		// --------------------------------------------------------------------------------
+
+		// Mise en place de l'indexation --------------------------------------------------
+		try (Reader dataReader = new FileReader(dataFile)) {
+			RDFParser rdfParser = Rio.createParser(RDFFormat.NTRIPLES);
+
+			IndexationRDFHandler indexationRDFHandler = new IndexationRDFHandler();
+			rdfParser.setRDFHandler(indexationRDFHandler);
+
+			startTimer = Utils.getCurrentTime();
+			rdfParser.parse(dataReader, baseURI);
+
+			endTimer = System.currentTimeMillis() - startTimer;
+			System.out.println("[+] Indexation done! ("+endTimer+"ms)");
+			Log.setExecTimeIndexation(endTimer);
+		}
+		// --------------------------------------------------------------------------------
 	}
 }

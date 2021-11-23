@@ -14,7 +14,7 @@ public class Dictionary {
      * (words U predicates) == Dictionary
      */
     private HashMap<Integer, String> words;
-    private HashMap<String, String> predicates;
+    private HashMap<Integer, String> predicates;
 
     /**
      * Counter to get a unique id for each word|predicate we add
@@ -25,8 +25,8 @@ public class Dictionary {
     // ========================================================================
 
     private Dictionary(){
-        words = new HashMap<Integer, String>();
-        predicates = new HashMap<String, String>();
+        words = new HashMap<>();
+        predicates = new HashMap<>();
         wordsIdCounter = 0;
         predicatesIdCounter = 0;
     }
@@ -56,13 +56,13 @@ public class Dictionary {
         return predicates.get(key);
     }
 
-    public String getPredicateByValue(String value){
+    public int getPredicateByValue(String value){
         for(int i = 0; i < predicates.size(); i++){
-            if(predicates.get("p"+i).equals(value)){
-                return "p"+i;
+            if(predicates.get(i).equals(value)){
+                return i;
             }
         }
-        return null;
+        return -1;
     }
 
     public void addWord(String word) {
@@ -73,8 +73,8 @@ public class Dictionary {
     }
 
     public void addPredicate(String predicate) {
-        if (!this.predicates.containsValue(predicate)) {
-            predicates.put("p" + predicatesIdCounter, predicate);
+        if (!predicates.containsValue(predicate)) {
+            predicates.put(predicatesIdCounter, predicate);
             predicatesIdCounter++;
         }
     }

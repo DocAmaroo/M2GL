@@ -10,3 +10,9 @@
 [submodule "HAI916I/tp/tp6/TP-Master-MTP-GL-IA4GL"]
 	path = HAI916I/tp/tp6/TP-Master-MTP-GL-IA4GL
 	url = https://github.com/qperez/TP-Master-MTP-GL-IA4GL.git
+[submodule "HAI916I/tp/tp6/MetricExtraction"]
+        path = HAI916I/tp/tp6/MetricExtraction
+        url = git@github.com:DocAmaroo/MetricExtraction.git
+[submodule "HAI916I/tp/tp6/TicketClassifier"]
+	path = HAI916I/tp/tp6/TicketClassifier
+	url = git@github.com:DocAmaroo/TicketClassifier.git
