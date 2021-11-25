@@ -24,32 +24,50 @@
 
 # TODO
 
-🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+🚩 **HAI912** ![0%](https://progress-bar.dev/0)
 
-👉 TP 5 | 📆 Avant 6 dec. 9h.
+👉 TP Arduino | 📆 Avant ???
 
 <hr>
 
-🚩 **HAI914** ![0%](https://progress-bar.dev/0)
+🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+
+👉 TP 5 | 📆 Avant 6 dec. 23h59.
+
+<hr>
+
+🚩 **HAI914** ![85%](https://progress-bar.dev/85)
 
 👉 Evaluation des requêtes en étoile : code + rapport 3 pages | 📆 Avant 28 nov.
 
 <hr>
 
 
-🚩 **HAI916** ![0%](https://progress-bar.dev/0)
+🚩 **HAI916** ![80%](https://progress-bar.dev/80)
 
-👉 Rendu TP Python  
-📆 30 nov.  
-📚 Rendre le notebook (par binôme, pas oublié les noms)  
-📧 quentin.perez@mines-ales.fr
+~~👉 Rendu TP Python~~  
+~~📆 30 nov.~~  
+~~📚 Rendre les notebook (par binôme, pas oublié les noms)~~  
+~~📧 quentin.perez@mines-ales.fr~~  
+
+👉 Rendu Rapport sur un fichier choisis  
+📆 13 dec.    
+📚 Choisir un fichier parmis les 10 et faire un rapport dessus
 
 <hr>
 
-🚩 **HAI931** ![0%](https://progress-bar.dev/20)
+🚩 **HAI919** ![0%](https://progress-bar.dev/0)
 
-👉 Relire le cours  
-👉 Souffrir fort
-👉 On est passé au CLisp maintenant
+👉 TP noté | 📆 2 Déc.  
+📚 Compétences testées:
+- Savoir saisir un nouveau métamodèle
+- Savoir générer le code EMF correspondant à un métamodèle ou utiliser du code EMF pré-généré comme nous l'avons fait avec UML
+- Savoir charger/sauver des modèles
+- Savoir implémenter une transformation de modèle en Java/EMF
+- Savoir donner une syntaxe graphique à un métamodèle avec Sirius 
+
+👉 Contrôle OCL | 📆 Jeudi 9 Dec. 13h15 - 14h20  
+📖 Relation ternaire, classe associative  
+📚 Document/Machine autorisée (Du coup pas obligé d'imprimer)  
 
 <hr>
