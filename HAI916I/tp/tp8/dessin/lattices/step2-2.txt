@@ -1,0 +1,1 @@
+Krole: step=3 nb.concepts=6 nb.attrib rel.=10

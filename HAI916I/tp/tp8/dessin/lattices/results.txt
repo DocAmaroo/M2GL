@@ -1,5 +1,21 @@
-Dessin: step=1 nb.concepts=7 nb.attrib rel.=0
-time:14 ms
-Dessin: step=2 nb.concepts=7 nb.attrib rel.=0
-time:1 ms
-total time: 25
+Kclass: step=1 nb.concepts=1 nb.attrib rel.=0
+Kattribute: step=1 nb.concepts=11 nb.attrib rel.=0
+Krole: step=1 nb.concepts=5 nb.attrib rel.=0
+Koperation: step=1 nb.concepts=9 nb.attrib rel.=0
+time:24 ms
+Kclass: step=2 nb.concepts=10 nb.attrib rel.=25
+Kattribute: step=2 nb.concepts=11 nb.attrib rel.=0
+Krole: step=2 nb.concepts=5 nb.attrib rel.=1
+Koperation: step=2 nb.concepts=9 nb.attrib rel.=0
+time:15 ms
+Kclass: step=3 nb.concepts=10 nb.attrib rel.=25
+Kattribute: step=3 nb.concepts=11 nb.attrib rel.=0
+Krole: step=3 nb.concepts=6 nb.attrib rel.=10
+Koperation: step=3 nb.concepts=9 nb.attrib rel.=0
+time:17 ms
+Kclass: step=4 nb.concepts=10 nb.attrib rel.=26
+Kattribute: step=4 nb.concepts=11 nb.attrib rel.=0
+Krole: step=4 nb.concepts=6 nb.attrib rel.=10
+Koperation: step=4 nb.concepts=9 nb.attrib rel.=0
+time:20 ms
+total time: 105

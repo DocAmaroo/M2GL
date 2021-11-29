@@ -1,119 +1,777 @@
 [
 {
-"attributes": {},
-"children": [
-8,
-10,
-13
+"attributes": {
+"exist_hasAttribute": {
+"concepts": [
+11
 ],
-"context": "Dessin",
-"id": 7,
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasOperation": {
+"concepts": [
+27
+],
+"operator": "exist",
+"relation": "hasOperation",
+"target": "Koperation"
+}
+},
+"children": [
+36,
+42
+],
+"context": "Kclass",
+"id": 1,
 "objects": [],
 "parents": []
 },
 {
 "attributes": {
-"bgColor": "bgColor",
-"borderColor": "borderColor",
-"getPoints": "getPoints",
-"points": "points"
+"exist_hasRole": {
+"concepts": [
+22
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
 },
 "children": [
-11,
-12
+38,
+39
 ],
-"context": "Dessin",
-"id": 10,
+"context": "Kclass",
+"id": 42,
 "objects": [],
 "parents": [
-7
+1
 ]
 },
 {
 "attributes": {
-"draw": "draw",
-"height": "height",
-"quadrilateres": "quadrilateres",
-"triangles": "triangles",
-"width": "width"
+"exist_hasAttribute": {
+"concepts": [
+15
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasRole": {
+"concepts": [
+26
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
 },
 "children": [
-9
+43,
+44
 ],
-"context": "Dessin",
-"id": 13,
-"objects": [
-"CanvasTri",
-"CanvasQuad"
-],
+"context": "Kclass",
+"id": 38,
+"objects": [],
 "parents": [
-7
+42
 ]
 },
 {
 "attributes": {
-"isCarre": "isCarre",
-"isRectangle": "isRectangle"
+"exist_hasAttribute": {
+"concepts": [
+16,
+17,
+18,
+19
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasOperation": {
+"concepts": [
+35
+],
+"operator": "exist",
+"relation": "hasOperation",
+"target": "Koperation"
+},
+"exist_hasRole": {
+"concepts": [
+45
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
 },
 "children": [
-9
+40,
+41
 ],
-"context": "Dessin",
-"id": 12,
+"context": "Kclass",
+"id": 39,
+"objects": [],
+"parents": [
+42
+]
+},
+{
+"attributes": {
+"exist_hasOperation": {
+"concepts": [
+33,
+34
+],
+"operator": "exist",
+"relation": "hasOperation",
+"target": "Koperation"
+}
+},
+"children": [
+37
+],
+"context": "Kclass",
+"id": 44,
 "objects": [
 "Quadrilatere"
 ],
 "parents": [
-10
+38
 ]
 },
 {
 "attributes": {
-"isIsocele": "isIsocele",
-"isTriangleRectangle": "isTriangleRectangle"
+"exist_hasOperation": {
+"concepts": [
+31,
+32
+],
+"operator": "exist",
+"relation": "hasOperation",
+"target": "Koperation"
+}
 },
 "children": [
-9
+37
 ],
-"context": "Dessin",
-"id": 11,
+"context": "Kclass",
+"id": 43,
 "objects": [
 "Triangle"
 ],
 "parents": [
-10
+38
 ]
 },
 {
 "attributes": {
-"coordX": "coordX",
-"coordY": "coordY",
-"getCoordX": "getCoordX",
-"getCoordY": "getCoordY"
+"exist_hasAttribute": {
+"concepts": [
+21
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasRole": {
+"concepts": [
+25
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
 },
 "children": [
-9
+37
 ],
-"context": "Dessin",
-"id": 8,
+"context": "Kclass",
+"id": 41,
+"objects": [
+"CanvasQuad"
+],
+"parents": [
+39
+]
+},
+{
+"attributes": {
+"exist_hasAttribute": {
+"concepts": [
+20
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasRole": {
+"concepts": [
+23
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
+},
+"children": [
+37
+],
+"context": "Kclass",
+"id": 40,
+"objects": [
+"CanvasTri"
+],
+"parents": [
+39
+]
+},
+{
+"attributes": {
+"exist_hasAttribute": {
+"concepts": [
+12,
+14
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasOperation": {
+"concepts": [
+28,
+30
+],
+"operator": "exist",
+"relation": "hasOperation",
+"target": "Koperation"
+}
+},
+"children": [
+37
+],
+"context": "Kclass",
+"id": 36,
 "objects": [
 "Point"
 ],
 "parents": [
-7
+1
+]
+},
+{
+"attributes": {
+"exist_hasAttribute": {
+"concepts": [
+13
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+},
+"exist_hasOperation": {
+"concepts": [
+29
+],
+"operator": "exist",
+"relation": "hasOperation",
+"target": "Koperation"
+},
+"exist_hasRole": {
+"concepts": [
+24
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
+},
+"children": [],
+"context": "Kclass",
+"id": 37,
+"objects": [],
+"parents": [
+36,
+40,
+41,
+43,
+44
+]
+},
+{
+"attributes": {},
+"children": [
+12,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21
+],
+"context": "Kattribute",
+"id": 11,
+"objects": [
+"-----------------"
+],
+"parents": []
+},
+{
+"attributes": {
+"quadrilateres": "quadrilateres"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 21,
+"objects": [
+"CQ::quadrilateres"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"triangles": "triangles"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 20,
+"objects": [
+"CT::triangles"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"height": "height"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 19,
+"objects": [
+"CT::height",
+"CQ::height"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"width": "width"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 18,
+"objects": [
+"CT::width",
+"CQ::width"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"borderColor": "borderColor"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 17,
+"objects": [
+"CT::borderColor",
+"CQ::borderColor"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"bgColor": "bgColor"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 16,
+"objects": [
+"CT::bgColor",
+"CQ::bgColor"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"points": "points"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 15,
+"objects": [
+"T::points",
+"Q::points"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"coordY": "coordY"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 14,
+"objects": [
+"P::coordY"
+],
+"parents": [
+11
+]
+},
+{
+"attributes": {
+"coordX": "coordX"
+},
+"children": [
+13
+],
+"context": "Kattribute",
+"id": 12,
+"objects": [
+"P::coordX"
+],
+"parents": [
+11
 ]
 },
 {
 "attributes": {},
 "children": [],
-"context": "Dessin",
-"id": 9,
+"context": "Kattribute",
+"id": 13,
 "objects": [],
 "parents": [
-8,
-11,
 12,
-13
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21
+]
+},
+{
+"attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+1
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+}
+},
+"children": [
+26,
+45
+],
+"context": "Krole",
+"id": 22,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+38,
+42
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+}
+},
+"children": [
+23,
+25
+],
+"context": "Krole",
+"id": 45,
+"objects": [],
+"parents": [
+22
+]
+},
+{
+"attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+36
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+},
+"points": "points"
+},
+"children": [
+24
+],
+"context": "Krole",
+"id": 26,
+"objects": [
+"T::points",
+"Q::points"
+],
+"parents": [
+22
+]
+},
+{
+"attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+44
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+},
+"quadrilateres": "quadrilateres"
+},
+"children": [
+24
+],
+"context": "Krole",
+"id": 25,
+"objects": [
+"CQ::quadrilateres"
+],
+"parents": [
+45
+]
+},
+{
+"attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+43
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+},
+"triangles": "triangles"
+},
+"children": [
+24
+],
+"context": "Krole",
+"id": 23,
+"objects": [
+"CT::triangles"
+],
+"parents": [
+45
+]
+},
+{
+"attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+37,
+39,
+40,
+41
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+}
+},
+"children": [],
+"context": "Krole",
+"id": 24,
+"objects": [],
+"parents": [
+23,
+25,
+26
+]
+},
+{
+"attributes": {},
+"children": [
+28,
+30,
+31,
+32,
+33,
+34,
+35
+],
+"context": "Koperation",
+"id": 27,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"draw": "draw"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 35,
+"objects": [
+"CT::draw",
+"CQ::draw"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"isRectangle": "isRectangle"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 34,
+"objects": [
+"Q::isRectangle"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"isCarre": "isCarre"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 33,
+"objects": [
+"Q::isCarre"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"isIsocele": "isIsocele"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 32,
+"objects": [
+"T::isIsocele"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"isTriangleRectangle": "isTriangleRectangle"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 31,
+"objects": [
+"T::isTriangleRectangle"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"getCoordY": "getCoordY"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 30,
+"objects": [
+"P::getCoordY"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"getCoordX": "getCoordX"
+},
+"children": [
+29
+],
+"context": "Koperation",
+"id": 28,
+"objects": [
+"P::getCoordX"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Koperation",
+"id": 29,
+"objects": [],
+"parents": [
+28,
+30,
+31,
+32,
+33,
+34,
+35
 ]
 }
 ]

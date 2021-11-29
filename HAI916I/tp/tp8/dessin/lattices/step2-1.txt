@@ -1,0 +1,1 @@
+Kattribute: step=3 nb.concepts=11 nb.attrib rel.=0

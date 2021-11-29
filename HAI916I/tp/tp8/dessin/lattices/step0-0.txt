@@ -1,1 +1,1 @@
-Dessin: step=1 nb.concepts=7 nb.attrib rel.=0
+Kclass: step=1 nb.concepts=1 nb.attrib rel.=0

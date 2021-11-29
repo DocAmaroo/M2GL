@@ -1,0 +1,103 @@
+digraph G { 
+	rankdir=BT;
+subgraph Kclass { 
+label="Kclass";
+1 [shape=record,label="{Concept_Kclass_1|exist_hasAttribute(C_Kattribute_11)\nexist_hasOperation(C_Koperation_27)\n|}"];
+36 [shape=record,label="{Concept_Kclass_36|exist_hasAttribute(C_Kattribute_12)\nexist_hasAttribute(C_Kattribute_14)\nexist_hasOperation(C_Koperation_28)\nexist_hasOperation(C_Koperation_30)\n|Point\n}"];
+37 [shape=record,label="{Concept_Kclass_37|exist_hasAttribute(C_Kattribute_13)\nexist_hasRole(C_Krole_24)\nexist_hasOperation(C_Koperation_29)\n|}"];
+38 [shape=record,label="{Concept_Kclass_38|exist_hasAttribute(C_Kattribute_15)\nexist_hasRole(C_Krole_26)\n|}"];
+39 [shape=record,label="{Concept_Kclass_39|exist_hasAttribute(C_Kattribute_16)\nexist_hasAttribute(C_Kattribute_17)\nexist_hasAttribute(C_Kattribute_18)\nexist_hasAttribute(C_Kattribute_19)\nexist_hasOperation(C_Koperation_35)\nexist_hasRole(C_Krole_45)\n|}"];
+40 [shape=record,label="{Concept_Kclass_40|exist_hasAttribute(C_Kattribute_20)\nexist_hasRole(C_Krole_23)\n|CanvasTri\n}"];
+41 [shape=record,label="{Concept_Kclass_41|exist_hasAttribute(C_Kattribute_21)\nexist_hasRole(C_Krole_25)\n|CanvasQuad\n}"];
+42 [shape=record,label="{Concept_Kclass_42|exist_hasRole(C_Krole_22)\n|}"];
+43 [shape=record,label="{Concept_Kclass_43|exist_hasOperation(C_Koperation_31)\nexist_hasOperation(C_Koperation_32)\n|Triangle\n}"];
+44 [shape=record,label="{Concept_Kclass_44|exist_hasOperation(C_Koperation_33)\nexist_hasOperation(C_Koperation_34)\n|Quadrilatere\n}"];
+	36 -> 1
+	42 -> 1
+	37 -> 36
+	43 -> 38
+	44 -> 38
+	40 -> 39
+	41 -> 39
+	37 -> 40
+	37 -> 41
+	38 -> 42
+	39 -> 42
+	37 -> 43
+	37 -> 44
+}
+subgraph Kattribute { 
+label="Kattribute";
+11 [shape=record,label="{Concept_Kattribute_11||-----------------\n}"];
+12 [shape=record,label="{Concept_Kattribute_12|coordX\n|P::coordX\n}"];
+13 [shape=record,label="{Concept_Kattribute_13||}"];
+14 [shape=record,label="{Concept_Kattribute_14|coordY\n|P::coordY\n}"];
+15 [shape=record,label="{Concept_Kattribute_15|points\n|T::points\nQ::points\n}"];
+16 [shape=record,label="{Concept_Kattribute_16|bgColor\n|CT::bgColor\nCQ::bgColor\n}"];
+17 [shape=record,label="{Concept_Kattribute_17|borderColor\n|CT::borderColor\nCQ::borderColor\n}"];
+18 [shape=record,label="{Concept_Kattribute_18|width\n|CT::width\nCQ::width\n}"];
+19 [shape=record,label="{Concept_Kattribute_19|height\n|CT::height\nCQ::height\n}"];
+20 [shape=record,label="{Concept_Kattribute_20|triangles\n|CT::triangles\n}"];
+21 [shape=record,label="{Concept_Kattribute_21|quadrilateres\n|CQ::quadrilateres\n}"];
+	12 -> 11
+	14 -> 11
+	15 -> 11
+	16 -> 11
+	17 -> 11
+	18 -> 11
+	19 -> 11
+	20 -> 11
+	21 -> 11
+	13 -> 12
+	13 -> 14
+	13 -> 15
+	13 -> 16
+	13 -> 17
+	13 -> 18
+	13 -> 19
+	13 -> 20
+	13 -> 21
+}
+subgraph Krole { 
+label="Krole";
+22 [shape=record,label="{Concept_Krole_22|exist_hasTypeEnd(C_Kclass_1)\n|}"];
+23 [shape=record,label="{Concept_Krole_23|triangles\nexist_hasTypeEnd(C_Kclass_43)\n|CT::triangles\n}"];
+24 [shape=record,label="{Concept_Krole_24|exist_hasTypeEnd(C_Kclass_37)\nexist_hasTypeEnd(C_Kclass_39)\nexist_hasTypeEnd(C_Kclass_40)\nexist_hasTypeEnd(C_Kclass_41)\n|}"];
+25 [shape=record,label="{Concept_Krole_25|quadrilateres\nexist_hasTypeEnd(C_Kclass_44)\n|CQ::quadrilateres\n}"];
+26 [shape=record,label="{Concept_Krole_26|points\nexist_hasTypeEnd(C_Kclass_36)\n|T::points\nQ::points\n}"];
+45 [shape=record,label="{Concept_Krole_45|exist_hasTypeEnd(C_Kclass_38)\nexist_hasTypeEnd(C_Kclass_42)\n|}"];
+	26 -> 22
+	45 -> 22
+	24 -> 23
+	24 -> 25
+	24 -> 26
+	23 -> 45
+	25 -> 45
+}
+subgraph Koperation { 
+label="Koperation";
+27 [shape=record,label="{Concept_Koperation_27||}"];
+28 [shape=record,label="{Concept_Koperation_28|getCoordX\n|P::getCoordX\n}"];
+29 [shape=record,label="{Concept_Koperation_29||}"];
+30 [shape=record,label="{Concept_Koperation_30|getCoordY\n|P::getCoordY\n}"];
+31 [shape=record,label="{Concept_Koperation_31|isTriangleRectangle\n|T::isTriangleRectangle\n}"];
+32 [shape=record,label="{Concept_Koperation_32|isIsocele\n|T::isIsocele\n}"];
+33 [shape=record,label="{Concept_Koperation_33|isCarre\n|Q::isCarre\n}"];
+34 [shape=record,label="{Concept_Koperation_34|isRectangle\n|Q::isRectangle\n}"];
+35 [shape=record,label="{Concept_Koperation_35|draw\n|CT::draw\nCQ::draw\n}"];
+	28 -> 27
+	30 -> 27
+	31 -> 27
+	32 -> 27
+	33 -> 27
+	34 -> 27
+	35 -> 27
+	29 -> 28
+	29 -> 30
+	29 -> 31
+	29 -> 32
+	29 -> 33
+	29 -> 34
+	29 -> 35
+}
+}
