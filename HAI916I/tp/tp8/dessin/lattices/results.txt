@@ -1,0 +1,5 @@
+Dessin: step=1 nb.concepts=7 nb.attrib rel.=0
+time:14 ms
+Dessin: step=2 nb.concepts=7 nb.attrib rel.=0
+time:1 ms
+total time: 25

@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20620\viewh13600\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\b Relational Concept Analysis on a simple model with FCA4J
+\b0\fs28 \
+\
+In this document, you will find the command lines to apply RCA to the \'91drone fleet\'92 example.\
+The model is very simple. It includes only two formal contexts that respectively describe types of drones and drone fleets. \
+A relational context \'91contains\'92 indicates which drone fleet contains which type of drone.\
+The used scaling operator is written in the .rcft file. For drone fleets the written operator is \'91exist\'92 (see dronefleet.rcft).\
+
+\fs24 \
+
+\fs28 STEP 0- Download files fca4j-cli-0.4.jar and dronefleet.rcft at https://www.lirmm.fr/fca4j/ \
+\
+STEP 1- Assume or move fca4j-cli-0.4.jar in current Directory \'91./\'91\
+\
+STEP 2- Create directory ./Drones (mkdir ./Drones)\
+Assume or move dronefleet.rcft in Directory \'91./Drones\'91\
+\
+STEP 3- Build the Relational Lattice Family (set of lattices)\
+- Create directory ./Drones/Lattices (mkdir ./Drones/Lattice)\
+- Launch fca4j\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 (java -jar fca4j-cli.jar RCA ./Drones/dronefleet.rcft ./Drones/Lattices -v -a ADD_EXTENT)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - This builds several files including:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'97 dronefleet.json that can be used to navigate the lattices with RCAviz (http://rcaviz.lirmm.fr/).\
+\'97 step1.dot which contains the set of connected lattices (the Relational Lattice Family). \
+\'97 several .txt files containing metrics (step, number of concepts and relational attributes)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - To produce a pdf view of the lattice, we can use Graphviz (https://graphviz.org/) \
+(dot -Tpdf Drones/Lattices/step1.dot -o Drones/step1.pdf)\
+\
+\
+}

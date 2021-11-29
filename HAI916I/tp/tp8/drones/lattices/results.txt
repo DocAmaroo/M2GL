@@ -1,0 +1,7 @@
+Drone: step=1 nb.concepts=13 nb.attrib rel.=0
+DroneFleet: step=1 nb.concepts=9 nb.attrib rel.=0
+time:7 ms
+Drone: step=2 nb.concepts=13 nb.attrib rel.=0
+DroneFleet: step=2 nb.concepts=9 nb.attrib rel.=13
+time:4 ms
+total time: 24

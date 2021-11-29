@@ -1,0 +1,119 @@
+[
+{
+"attributes": {},
+"children": [
+8,
+10,
+13
+],
+"context": "Dessin",
+"id": 7,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"bgColor": "bgColor",
+"borderColor": "borderColor",
+"getPoints": "getPoints",
+"points": "points"
+},
+"children": [
+11,
+12
+],
+"context": "Dessin",
+"id": 10,
+"objects": [],
+"parents": [
+7
+]
+},
+{
+"attributes": {
+"draw": "draw",
+"height": "height",
+"quadrilateres": "quadrilateres",
+"triangles": "triangles",
+"width": "width"
+},
+"children": [
+9
+],
+"context": "Dessin",
+"id": 13,
+"objects": [
+"CanvasTri",
+"CanvasQuad"
+],
+"parents": [
+7
+]
+},
+{
+"attributes": {
+"isCarre": "isCarre",
+"isRectangle": "isRectangle"
+},
+"children": [
+9
+],
+"context": "Dessin",
+"id": 12,
+"objects": [
+"Quadrilatere"
+],
+"parents": [
+10
+]
+},
+{
+"attributes": {
+"isIsocele": "isIsocele",
+"isTriangleRectangle": "isTriangleRectangle"
+},
+"children": [
+9
+],
+"context": "Dessin",
+"id": 11,
+"objects": [
+"Triangle"
+],
+"parents": [
+10
+]
+},
+{
+"attributes": {
+"coordX": "coordX",
+"coordY": "coordY",
+"getCoordX": "getCoordX",
+"getCoordY": "getCoordY"
+},
+"children": [
+9
+],
+"context": "Dessin",
+"id": 8,
+"objects": [
+"Point"
+],
+"parents": [
+7
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Dessin",
+"id": 9,
+"objects": [],
+"parents": [
+8,
+11,
+12,
+13
+]
+}
+]

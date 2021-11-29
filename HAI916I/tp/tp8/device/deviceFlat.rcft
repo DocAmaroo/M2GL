@@ -1,0 +1,8 @@
+FormalContext Kclass
+|	     |tubeHeight|measureInterval|precision|measuringDate|codeQuality|waterAmount|windStrength|windDirection|period|measuredRainfall|measuredWind|storedRainfall|print|printInfo|
+|RainGauge  | x| | | | | | | | |x| | | | |
+|Anemometer |  |x|x| | | | | | | |x| | | |
+|Rainfall   |  | | |x|x|x| | | | | | | |x|
+|Wind       |  | | |x|x| |x|x| | | | | |x|
+|RainReport| | | | | | | | |x| | |x|x| |
+

@@ -1,0 +1,77 @@
+FormalContext Kclass
+|	     | 
+|RainGauge  | 
+|Anemometer | 
+|Rainfall   | 
+|Wind       | 
+|RainReport |
+
+FormalContext Kattribute
+||tubeHeight|measureInterval|precision|measuringDate|codeQuality|waterAmount|windStrength|windDirection|period|number|int|real|
+|RG::tubeHeight    |x| | | | | | | | | | | |
+|A::measureInterval| |x| | | | | | | | | | |
+|A::precision      | | |x| | | | | | | | | |
+|R::measuringDate  | | | |x| | | | | | | | |
+|W::measuringDate  | | | |x| | | | | | | | |
+|R::codeQuality    | | | | |x| | | | |x|x| |
+|W::codeQuality    | | | | |x| | | | |x| |x|
+|R::waterAmount    | | | | | |x| | | | | | |
+|W::windStrength   | | | | | | |x| | | | | |
+|W::windDirection  | | | | | | | |x| | | | |
+|RR::period        | | | | | | | | |x| | | |
+
+FormalContext Krole
+| |measuredRainfall|measuredWind|storedRainfall|
+|RG::measuredRainfall|x| | |
+|RR::storedRainfall | | |x|
+|A::measuredWind    | |x| |
+
+
+FormalContext Koperation
+|            |print|MC|MCWA|MCWSWD|PstoredRF|
+|RR::print   |x| | | |x|
+|R::printinfo|x|x|x| | |
+|W::printinfo|x|x| |x| |
+
+RelationalContext hasAttribute
+source Kclass
+target Kattribute
+scaling org.rcaexplore.scaling.ExistentialScaling
+|	    |RG::tubeHeight|A::measureInterval|A::precision|R::measuringDate|W::measuringDate|R::codeQuality|W::codeQuality|R::waterAmount|W::windStrength|W::windDirection|RR::period|
+|RainGauge  |x| | | | | | | | | | |
+|Anemometer | |x|x| | | | | | | | | 
+|Rainfall   | | | |x| |x| |x| | | | 
+|Wind       | | | | |x| |x| |x|x| | 
+|RainReport |||||||||||x|
+
+RelationalContext hasRole
+source Kclass
+target Krole
+scaling org.rcaexplore.scaling.ExistentialScaling
+||RG::measuredRainfall|RR::storedRainfall|A::measuredWind|
+|RainGauge|x| | |
+|Anemometer| | |x|
+|Rainfall| | | |
+|Wind| | | |
+|RainReport| |x| |
+
+RelationalContext hasOperation
+source Kclass
+target Koperation
+scaling org.rcaexplore.scaling.ExistentialScaling
+|	    |RR::print|R::printinfo|W::printinfo|
+|RainGauge  | | | |
+|Anemometer | | | |
+|Rainfall   | |x| |
+|Wind       | | |x| 
+|RainReport |x| | |
+
+RelationalContext hasTypeEnd 
+source Krole
+target Kclass
+scaling org.rcaexplore.scaling.ExistentialScaling
+|                    |RainGauge|Anemometer|Rainfall|Wind|RainReport|
+|RG::measuredRainfall| | |x| | |
+|RR::storedRainfall  | | |x| | |
+|A::measuredWind     | | | |x| |
+

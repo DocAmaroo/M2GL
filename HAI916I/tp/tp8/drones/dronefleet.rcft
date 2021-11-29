@@ -1,0 +1,30 @@
+FormalContext Drone
+||Gimbal|GPS|GLONASS|Avoidance|Headless|Altitude Hold|FT l 10|FT ge 10|FT ge 20|
+|Syma X4S Assault|||||x||x|||
+|Syma X8G|||||x| |x|||
+|Parrot Bebop| |x||||x||x||
+|DJI Ryze Tello||||||x||x||
+|Hubsan X4 H502S||x|||x|x||x||
+|Aosenma CG035 GPS FPV|x|x| ||x|x||x||
+|DJI Mavic Air|x|x|x|x|x|x|| |x|
+|Yuneec Typhoon H Pro|x|x|x|x|x|x|| |x|
+
+FormalContext DroneFleet
+||mission:agri|mission:rescue|mission:Audiovisual|archi:centralized|archi:distributed|guidance:human|guidance:ML|control:leaderFollower|control:behaviorBased|
+|agriDF0|x|||x||x||x|| 
+|agriDF1|x||||x|x||x|| 
+|rescueDF2||x|||x|x|x||x| 
+|rescueDF3||x|||x|x|x||x| 
+|audiovisualDF4|||x||x|x|||x| 
+
+RelationalContext contains
+source DroneFleet
+target Drone
+scaling exist
+||Syma X4S Assault|Syma X8G|Parrot Bebop|DJI Ryze Tello|Hubsan X4 H502S|Aosenma CG035 GPS FPV|DJI Mavic Air|Yuneec Typhoon H Pro|
+|agriDF0|x| |||||||
+|agriDF1|x|x|||||x|x|
+|rescueDF2|||||||x||
+|rescueDF3||||||||x|
+|audiovisualDF4|||x|x|x||x|x|
+

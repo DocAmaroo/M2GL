@@ -1,0 +1,382 @@
+[
+{
+"attributes": {},
+"children": [
+18,
+19
+],
+"context": "Drone",
+"id": 13,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"Altitude Hold": "Altitude Hold"
+},
+"children": [
+15,
+25
+],
+"context": "Drone",
+"id": 19,
+"objects": [],
+"parents": [
+13
+]
+},
+{
+"attributes": {
+"FT ge 10": "FT ge 10"
+},
+"children": [
+24
+],
+"context": "Drone",
+"id": 25,
+"objects": [
+"DJI Ryze Tello"
+],
+"parents": [
+19
+]
+},
+{
+"attributes": {
+"GPS": "GPS"
+},
+"children": [
+17,
+24
+],
+"context": "Drone",
+"id": 15,
+"objects": [],
+"parents": [
+19
+]
+},
+{
+"attributes": {
+"Headless": "Headless"
+},
+"children": [
+17,
+21
+],
+"context": "Drone",
+"id": 18,
+"objects": [],
+"parents": [
+13
+]
+},
+{
+"attributes": {},
+"children": [
+23
+],
+"context": "Drone",
+"id": 24,
+"objects": [
+"Parrot Bebop"
+],
+"parents": [
+15,
+25
+]
+},
+{
+"attributes": {},
+"children": [
+14,
+23
+],
+"context": "Drone",
+"id": 17,
+"objects": [],
+"parents": [
+15,
+18
+]
+},
+{
+"attributes": {},
+"children": [
+22
+],
+"context": "Drone",
+"id": 23,
+"objects": [
+"Hubsan X4 H502S"
+],
+"parents": [
+17,
+24
+]
+},
+{
+"attributes": {
+"Gimbal": "Gimbal"
+},
+"children": [
+16,
+22
+],
+"context": "Drone",
+"id": 14,
+"objects": [],
+"parents": [
+17
+]
+},
+{
+"attributes": {},
+"children": [
+20
+],
+"context": "Drone",
+"id": 22,
+"objects": [
+"Aosenma CG035 GPS FPV"
+],
+"parents": [
+14,
+23
+]
+},
+{
+"attributes": {
+"FT l 10": "FT l 10"
+},
+"children": [
+20
+],
+"context": "Drone",
+"id": 21,
+"objects": [
+"Syma X4S Assault",
+"Syma X8G"
+],
+"parents": [
+18
+]
+},
+{
+"attributes": {
+"Avoidance": "Avoidance",
+"FT ge 20": "FT ge 20",
+"GLONASS": "GLONASS"
+},
+"children": [
+20
+],
+"context": "Drone",
+"id": 16,
+"objects": [
+"DJI Mavic Air",
+"Yuneec Typhoon H Pro"
+],
+"parents": [
+14
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Drone",
+"id": 20,
+"objects": [],
+"parents": [
+16,
+21,
+22
+]
+},
+{
+"attributes": {
+"exist_contains": {
+"concepts": [
+13,
+18
+],
+"operator": "exist",
+"relation": "contains",
+"target": "Drone"
+},
+"guidance:human": "guidance:human"
+},
+"children": [
+27,
+33
+],
+"context": "DroneFleet",
+"id": 26,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"archi:distributed": "archi:distributed",
+"exist_contains": {
+"concepts": [
+14,
+15,
+16,
+17,
+19
+],
+"operator": "exist",
+"relation": "contains",
+"target": "Drone"
+}
+},
+"children": [
+32,
+34
+],
+"context": "DroneFleet",
+"id": 33,
+"objects": [],
+"parents": [
+26
+]
+},
+{
+"attributes": {
+"control:leaderFollower": "control:leaderFollower",
+"exist_contains": {
+"concepts": [
+21
+],
+"operator": "exist",
+"relation": "contains",
+"target": "Drone"
+},
+"mission:agri": "mission:agri"
+},
+"children": [
+31,
+32
+],
+"context": "DroneFleet",
+"id": 27,
+"objects": [],
+"parents": [
+26
+]
+},
+{
+"attributes": {
+"control:behaviorBased": "control:behaviorBased"
+},
+"children": [
+29,
+30
+],
+"context": "DroneFleet",
+"id": 34,
+"objects": [],
+"parents": [
+33
+]
+},
+{
+"attributes": {},
+"children": [
+28
+],
+"context": "DroneFleet",
+"id": 32,
+"objects": [
+"agriDF1"
+],
+"parents": [
+27,
+33
+]
+},
+{
+"attributes": {
+"archi:centralized": "archi:centralized"
+},
+"children": [
+28
+],
+"context": "DroneFleet",
+"id": 31,
+"objects": [
+"agriDF0"
+],
+"parents": [
+27
+]
+},
+{
+"attributes": {
+"exist_contains": {
+"concepts": [
+23,
+24,
+25
+],
+"operator": "exist",
+"relation": "contains",
+"target": "Drone"
+},
+"mission:Audiovisual": "mission:Audiovisual"
+},
+"children": [
+28
+],
+"context": "DroneFleet",
+"id": 30,
+"objects": [
+"audiovisualDF4"
+],
+"parents": [
+34
+]
+},
+{
+"attributes": {
+"guidance:ML": "guidance:ML",
+"mission:rescue": "mission:rescue"
+},
+"children": [
+28
+],
+"context": "DroneFleet",
+"id": 29,
+"objects": [
+"rescueDF2",
+"rescueDF3"
+],
+"parents": [
+34
+]
+},
+{
+"attributes": {
+"exist_contains": {
+"concepts": [
+20,
+22
+],
+"operator": "exist",
+"relation": "contains",
+"target": "Drone"
+}
+},
+"children": [],
+"context": "DroneFleet",
+"id": 28,
+"objects": [],
+"parents": [
+29,
+30,
+31,
+32
+]
+}
+]

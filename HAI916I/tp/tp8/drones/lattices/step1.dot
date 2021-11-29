@@ -1,0 +1,61 @@
+digraph G { 
+	rankdir=BT;
+subgraph Drone { 
+label="Drone";
+13 [shape=record,label="{Concept_Drone_13||}"];
+14 [shape=record,label="{Concept_Drone_14|Gimbal\n|}"];
+15 [shape=record,label="{Concept_Drone_15|GPS\n|}"];
+16 [shape=record,label="{Concept_Drone_16|GLONASS\nAvoidance\nFT ge 20\n|DJI Mavic Air\nYuneec Typhoon H Pro\n}"];
+17 [shape=record,label="{Concept_Drone_17||}"];
+18 [shape=record,label="{Concept_Drone_18|Headless\n|}"];
+19 [shape=record,label="{Concept_Drone_19|Altitude Hold\n|}"];
+20 [shape=record,label="{Concept_Drone_20||}"];
+21 [shape=record,label="{Concept_Drone_21|FT l 10\n|Syma X4S Assault\nSyma X8G\n}"];
+22 [shape=record,label="{Concept_Drone_22||Aosenma CG035 GPS FPV\n}"];
+23 [shape=record,label="{Concept_Drone_23||Hubsan X4 H502S\n}"];
+24 [shape=record,label="{Concept_Drone_24||Parrot Bebop\n}"];
+25 [shape=record,label="{Concept_Drone_25|FT ge 10\n|DJI Ryze Tello\n}"];
+	18 -> 13
+	19 -> 13
+	16 -> 14
+	22 -> 14
+	17 -> 15
+	24 -> 15
+	20 -> 16
+	14 -> 17
+	23 -> 17
+	17 -> 18
+	21 -> 18
+	15 -> 19
+	25 -> 19
+	20 -> 21
+	20 -> 22
+	22 -> 23
+	23 -> 24
+	24 -> 25
+}
+subgraph DroneFleet { 
+label="DroneFleet";
+26 [shape=record,label="{Concept_DroneFleet_26|guidance:human\nexist_contains(C_Drone_13)\nexist_contains(C_Drone_18)\n|}"];
+27 [shape=record,label="{Concept_DroneFleet_27|mission:agri\ncontrol:leaderFollower\nexist_contains(C_Drone_21)\n|}"];
+28 [shape=record,label="{Concept_DroneFleet_28|exist_contains(C_Drone_20)\nexist_contains(C_Drone_22)\n|}"];
+29 [shape=record,label="{Concept_DroneFleet_29|mission:rescue\nguidance:ML\n|rescueDF2\nrescueDF3\n}"];
+30 [shape=record,label="{Concept_DroneFleet_30|mission:Audiovisual\nexist_contains(C_Drone_23)\nexist_contains(C_Drone_24)\nexist_contains(C_Drone_25)\n|audiovisualDF4\n}"];
+31 [shape=record,label="{Concept_DroneFleet_31|archi:centralized\n|agriDF0\n}"];
+32 [shape=record,label="{Concept_DroneFleet_32||agriDF1\n}"];
+33 [shape=record,label="{Concept_DroneFleet_33|archi:distributed\nexist_contains(C_Drone_14)\nexist_contains(C_Drone_15)\nexist_contains(C_Drone_16)\nexist_contains(C_Drone_17)\nexist_contains(C_Drone_19)\n|}"];
+34 [shape=record,label="{Concept_DroneFleet_34|control:behaviorBased\n|}"];
+	27 -> 26
+	33 -> 26
+	31 -> 27
+	32 -> 27
+	28 -> 29
+	28 -> 30
+	28 -> 31
+	28 -> 32
+	32 -> 33
+	34 -> 33
+	29 -> 34
+	30 -> 34
+}
+}

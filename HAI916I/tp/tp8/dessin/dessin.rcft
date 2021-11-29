@@ -1,0 +1,34 @@
+FormalContext Dessin
+|              | coordX | coordY | getCoordX | getCoordY | points | bgColor | borderColor | getPoints | isIsocele | isTriangleRectangle | isCarre | isRectangle | width | height | draw | triangles | quadrilateres |
+| Point        | x      | x      | x         | x         |        |         |             |           |           |                     |         |             |       |        |      |           |               |
+| CanvasTri    |        |        |           |           |        |         |             |           |           |                     |         |             | x     | x      | x    | x         | x             |
+| CanvasQuad   |        |        |           |           |        |         |             |           |           |                     |         |             | x     | x      | x    | x         | x             |
+| Triangle     |        |        |           |           | x      | x       | x           | x         | x         | x                   |         |             |       |        |      |           |               |
+| Quadrilatere |        |        |           |           | x      | x       | x           | x         |           |                     | x       | x           |       |        |      |           |               |
+
+FormalContext Role
+|  | triangles | quadrilateres | points |
+| CanvasTri::triangles |x|||
+| CanvasQuad::quadrilateres | |x| |
+| Triangle::points |||x|
+| Quadrilatere::points |||x|
+
+RelationalContext hasRole
+source Dessin
+target Role
+scaling org.rcaexplore.scaling.ExistentialScaling
+|  | CanvasTri::triangles | CanvasQuad::quadrilateres | Triangle::points | Quadrilatere::points |
+| Point |||||
+| CanvasTri |x||||
+| CanvasQuad ||x|||
+| Triangle |||x||
+| Quadrilatere ||||x|
+
+RelationalContext hasTypeEnd 
+source Role
+target Dessin
+scaling org.rcaexplore.scaling.ExistentialScaling
+|                    |RainGauge|Anemometer|Rainfall|Wind|RainReport|
+|RG::measuredRainfall| | |x| | |
+|RR::storedRainfall  | | |x| | |
+|A::measuredWind     | | | |x| |
