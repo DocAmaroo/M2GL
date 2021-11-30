@@ -1,0 +1,91 @@
+FormalContext Kclass
+|              |
+| Point        |
+| Triangle     |
+| Quadrilatere |
+| CanvasTri    |
+| CanvasQuad   |
+
+
+FormalContext Kattribute
+|                   | coordX | coordY | points | bgColor | borderColor | width | height | triangles | quadrilateres |
+| P::coordX         | x      |        |        |         |             |       |        |           |               |
+| P::coordY         |        | x      |        |         |             |       |        |           |               |
+| T::points         |        |        | x      |         |             |       |        |           |               |
+| Q::points         |        |        | x      |         |             |       |        |           |               |
+| CT::bgColor       |        |        |        | x       |             |       |        |           |               |
+| CQ::bgColor       |        |        |        | x       |             |       |        |           |               |
+| CT::borderColor   |        |        |        |         | x           |       |        |           |               |
+| CQ::borderColor   |        |        |        |         | x           |       |        |           |               |
+| CT::width         |        |        |        |         |             | x     |        |           |               |
+| CQ::width         |        |        |        |         |             | x     |        |           |               |
+| CT::height        |        |        |        |         |             |       | x      |           |               |
+| CQ::height        |        |        |        |         |             |       | x      |           |               |
+| CT::triangles     |        |        |        |         |             |       |        | x         |               |
+| CQ::quadrilateres |        |        |        |         |             |       |        |           | x             |
+
+FormalContext Krole
+|                   | triangles | quadrilateres | points |
+| CT::triangles     | x         |               |        |
+| CQ::quadrilateres |           | x             |        |
+| T::points         |           |               | x      |
+| Q::points         |           |               | x      |
+
+
+FormalContext Koperation
+|                        | getCoordX | getCoordY | isTriangleRectangle | isIsocele | isCarre | isRectangle | draw |
+| P::getCoordX           | x         |           |                     |           |         |             |      |
+| P::getCoordY           |           | x         |                     |           |         |             |      |
+| T::isTriangleRectangle |           |           | x                   |           |         |             |      |
+| T::isIsocele           |           |           |                     | x         |         |             |      |
+| Q::isCarre             |           |           |                     |           | x       |             |      |
+| Q::isRectangle         |           |           |                     |           |         | x           |      |
+| CT::draw               |           |           |                     |           |         |             | x    |
+| CQ::draw               |           |           |                     |           |         |             | x    |
+
+
+RelationalContext hasAttribute
+source Kclass
+target Kattribute
+scaling org.rcaexplore.scaling.ExistentialScaling
+|              | P::coordX | P::coordY | T::points | Q::points | CT::bgColor | CQ::bgColor | CT::borderColor | CQ::borderColor | CT::width | CQ::width | CT::height | CQ::height | CT::triangles | CQ::quadrilateres |
+| Point        | x         | x         |           |           |             |             |                 |                 |           |           |            |            |               |                   |
+| Triangle     |           |           | x         |           |             |             |                 |                 |           |           |            |            |               |                   |
+| Quadrilatere |           |           |           | x         |             |             |                 |                 |           |           |            |            |               |                   |
+| CanvasTri    |           |           |           |           | x           |             | x               |                 | x         |           | x          |            | x             |                   |
+| CanvasQuad   |           |           |           |           |             | x           |                 | x               |           | x         |            | x          |               | x                 |
+
+
+RelationalContext hasRole
+source Kclass
+target Krole
+scaling org.rcaexplore.scaling.ExistentialScaling
+|              | CT::triangles | CQ::quadrilateres | T::points | Q::points |
+| Point        |               |                   |           |           |
+| CanvasTri    | x             |                   |           |           |
+| CanvasQuad   |               | x                 |           |           |
+| Triangle     |               |                   | x         |           |
+| Quadrilatere |               |                   |           | x         |
+
+
+RelationalContext hasOperation
+source Kclass
+target Koperation
+scaling org.rcaexplore.scaling.ExistentialScaling
+|              | P::getCoordX | P::getCoordY | T::isTriangleRectangle | T::isIsocele | Q::isCarre | Q::isRectangle | CT::draw | CQ::draw |
+| Point        | x            | x            |                        |              |            |                |          |          |
+| Triangle     |              |              | x                      | x            |            |                |          |          |
+| Quadrilatere |              |              |                        |              | x          | x              |          |          |
+| CanvasTri    |              |              |                        |              |            |                | x        |          |
+| CanvasQuad   |              |              |                        |              |            |                |          | x        |
+
+
+RelationalContext hasTypeEnd 
+source Krole
+target Kclass
+scaling org.rcaexplore.scaling.ExistentialScaling
+|                   | Point | CanvasTri | CanvasQuad | Triangle | Quadrilatere |
+| CT::triangles     |       |           |            | x        |              |
+| CQ::quadrilateres |       |           |            |          | x            |
+| T::points         | x     |           |            |          |              |
+| Q::points         | x     |           |            |          |              |

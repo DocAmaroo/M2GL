@@ -9,7 +9,6 @@ FormalContext Kclass
 
 FormalContext Kattribute
 |                   | coordX | coordY | points | bgColor | borderColor | width | height | triangles | quadrilateres |
-| ----------------- | ------ | ------ | ------ | ------- | ----------- | ----- | ------ | --------- | ------------- |
 | P::coordX         | x      |        |        |         |             |       |        |           |               |
 | P::coordY         |        | x      |        |         |             |       |        |           |               |
 | T::points         |        |        | x      |         |             |       |        |           |               |

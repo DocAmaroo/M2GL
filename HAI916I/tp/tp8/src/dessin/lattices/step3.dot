@@ -28,7 +28,7 @@ label="Kclass";
 }
 subgraph Kattribute { 
 label="Kattribute";
-11 [shape=record,label="{Concept_Kattribute_11||-----------------\n}"];
+11 [shape=record,label="{Concept_Kattribute_11||}"];
 12 [shape=record,label="{Concept_Kattribute_12|coordX\n|P::coordX\n}"];
 13 [shape=record,label="{Concept_Kattribute_13||}"];
 14 [shape=record,label="{Concept_Kattribute_14|coordY\n|P::coordY\n}"];
