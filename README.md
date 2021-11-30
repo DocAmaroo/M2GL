@@ -38,21 +38,27 @@
 
 🚩 **HAI914** ![85%](https://progress-bar.dev/85)
 
-👉 Evaluation des requêtes en étoile : code + rapport 3 pages | 📆 Avant 28 nov.
+👉 Optimisation : code + rapport 5 pages | 📆 Avant 17 dec.
 
 <hr>
 
 
 🚩 **HAI916** ![80%](https://progress-bar.dev/80)
 
-~~👉 Rendu TP Python~~  
-~~📆 30 nov.~~  
-~~📚 Rendre les notebook (par binôme, pas oublié les noms)~~  
-~~📧 quentin.perez@mines-ales.fr~~  
-
 👉 Rendu Rapport sur un fichier choisis  
 📆 13 dec.    
 📚 Choisir un fichier parmis les 10 et faire un rapport dessus
+
+👉 Rendu RCA  
+📆 18 dec.    
+📊 DrawIO: https://drive.google.com/file/d/1FQikdatIE3cUAnTxg2bjkDjRfnIStfGn/view?usp=sharing  
+📚 Ce à quoi il faut répondre:
+
+1. Vous définirez et dessinerez un modèle UML de petite taille (quelques classes et associations) avec des refactorisation d'attributs, opérations et associations à effectuer.
+2. Puis vous mettrez en place le fichier RCFT pour coder le modèle.
+3. Vous appliquerez RCA avec FCA4J (recommandé et avec la version light) ou RCAexplore.
+4. Enfin vous dessinerez le modèle UML en forme normale suggéré par RCA. 
+
 
 <hr>
 
@@ -69,5 +75,3 @@
 👉 Contrôle OCL | 📆 Jeudi 9 Dec. 13h15 - 14h20  
 📖 Relation ternaire, classe associative  
 📚 Document/Machine autorisée (Du coup pas obligé d'imprimer)  
-
-<hr>
