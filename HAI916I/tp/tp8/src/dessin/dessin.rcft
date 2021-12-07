@@ -13,10 +13,10 @@ FormalContext Kattribute
 | P::coordY         |        | x      |        |         |             |       |        |           |               |
 | T::points         |        |        | x      |         |             |       |        |           |               |
 | Q::points         |        |        | x      |         |             |       |        |           |               |
-| CT::bgColor       |        |        |        | x       |             |       |        |           |               |
-| CQ::bgColor       |        |        |        | x       |             |       |        |           |               |
-| CT::borderColor   |        |        |        |         | x           |       |        |           |               |
-| CQ::borderColor   |        |        |        |         | x           |       |        |           |               |
+| T::bgColor        |        |        |        | x       |             |       |        |           |               |
+| Q::bgColor        |        |        |        | x       |             |       |        |           |               |
+| T::borderColor    |        |        |        |         | x           |       |        |           |               |
+| Q::borderColor    |        |        |        |         | x           |       |        |           |               |
 | CT::width         |        |        |        |         |             | x     |        |           |               |
 | CQ::width         |        |        |        |         |             | x     |        |           |               |
 | CT::height        |        |        |        |         |             |       | x      |           |               |
@@ -48,12 +48,12 @@ RelationalContext hasAttribute
 source Kclass
 target Kattribute
 scaling org.rcaexplore.scaling.ExistentialScaling
-|              | P::coordX | P::coordY | T::points | Q::points | CT::bgColor | CQ::bgColor | CT::borderColor | CQ::borderColor | CT::width | CQ::width | CT::height | CQ::height | CT::triangles | CQ::quadrilateres |
-| Point        | x         | x         |           |           |             |             |                 |                 |           |           |            |            |               |                   |
-| Triangle     |           |           | x         |           |             |             |                 |                 |           |           |            |            |               |                   |
-| Quadrilatere |           |           |           | x         |             |             |                 |                 |           |           |            |            |               |                   |
-| CanvasTri    |           |           |           |           | x           |             | x               |                 | x         |           | x          |            | x             |                   |
-| CanvasQuad   |           |           |           |           |             | x           |                 | x               |           | x         |            | x          |               | x                 |
+|              | P::coordX | P::coordY | T::points | Q::points | T::bgColor | Q::bgColor | T::borderColor | Q::borderColor | CT::width | CQ::width | CT::height | CQ::height | CT::triangles | CQ::quadrilateres |
+| Point        | x         | x         |           |           |            |            |                |                |           |           |            |            |               |                   |
+| Triangle     |           |           | x         |           | x          |            | x              |                |           |           |            |            |               |                   |
+| Quadrilatere |           |           |           | x         |            | x          |                | x              |           |           |            |            |               |                   |
+| CanvasTri    |           |           |           |           |            |            |                |                | x         |           | x          |            | x             |                   |
+| CanvasQuad   |           |           |           |           |            |            |                |                |           | x         |            | x          |               | x                 |
 
 
 RelationalContext hasRole

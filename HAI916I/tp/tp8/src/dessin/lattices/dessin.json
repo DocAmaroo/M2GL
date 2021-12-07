@@ -53,7 +53,9 @@
 "attributes": {
 "exist_hasAttribute": {
 "concepts": [
-15
+15,
+16,
+17
 ],
 "operator": "exist",
 "relation": "hasAttribute",
@@ -83,8 +85,6 @@
 "attributes": {
 "exist_hasAttribute": {
 "concepts": [
-16,
-17,
 18,
 19
 ],
@@ -396,8 +396,8 @@
 "context": "Kattribute",
 "id": 17,
 "objects": [
-"CT::borderColor",
-"CQ::borderColor"
+"T::borderColor",
+"Q::borderColor"
 ],
 "parents": [
 11
@@ -413,8 +413,8 @@
 "context": "Kattribute",
 "id": 16,
 "objects": [
-"CT::bgColor",
-"CQ::bgColor"
+"T::bgColor",
+"Q::bgColor"
 ],
 "parents": [
 11
