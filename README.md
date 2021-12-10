@@ -26,27 +26,35 @@
 
 🚩 **HAI912** ![0%](https://progress-bar.dev/0)
 
-👉 TP Arduino | 📆 Avant ???
+👉 Projet parking (code + rapport)  
+📆 23 décembre, 23h
+
+👉 Article  
+📆 23 décembre, 23h
 
 <hr>
 
 🚩 **HAI913** ![0%](https://progress-bar.dev/0)
 
-👉 TP 5 | 📆 Avant 6 dec. 23h59.
+👉 TP 5  
+📆 Avant ???
+
+👉 TP 3 & 4  
+📆 Avant 10 jan.
 
 <hr>
 
-🚩 **HAI914** ![85%](https://progress-bar.dev/85)
+🚩 **HAI914** ![25%](https://progress-bar.dev/25)
 
-👉 Optimisation : code + rapport 5 pages | 📆 Avant 17 dec.
+👉 Rendu final  
+📆 Avant 4 jan.
 
 <hr>
-
 
 🚩 **HAI916** ![80%](https://progress-bar.dev/80)
 
 👉 Rendu Rapport sur un fichier choisis  
-📆 13 dec.    
+📆 18 dec.    
 📚 Choisir un fichier parmis les 10 et faire un rapport dessus
 
 👉 Rendu RCA  
@@ -59,19 +67,17 @@
 3. Vous appliquerez RCA avec FCA4J (recommandé et avec la version light) ou RCAexplore.
 4. Enfin vous dessinerez le modèle UML en forme normale suggéré par RCA. 
 
+<hr>
+
+🚩 **HAI931** ![0%](https://progress-bar.dev/0)
+
+👉 Examen terminal  
+📆 12 jan.  
+📚 voir [annale 2021](./HAI931I/annales/Dony2021.pdf)
 
 <hr>
 
-🚩 **HAI919** ![0%](https://progress-bar.dev/0)
+🚩 **HAI934** ![0%](https://progress-bar.dev/0)
 
-👉 TP noté | 📆 2 Déc.  
-📚 Compétences testées:
-- Savoir saisir un nouveau métamodèle
-- Savoir générer le code EMF correspondant à un métamodèle ou utiliser du code EMF pré-généré comme nous l'avons fait avec UML
-- Savoir charger/sauver des modèles
-- Savoir implémenter une transformation de modèle en Java/EMF
-- Savoir donner une syntaxe graphique à un métamodèle avec Sirius 
-
-👉 Contrôle OCL | 📆 Jeudi 9 Dec. 13h15 - 14h20  
-📖 Relation ternaire, classe associative  
-📚 Document/Machine autorisée (Du coup pas obligé d'imprimer)  
+👉 Examen terminal  
+📆 12 jan.
