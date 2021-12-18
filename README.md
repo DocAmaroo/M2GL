@@ -34,7 +34,7 @@
 
 <hr>
 
-🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+🚩 **HAI913** ![35%](https://progress-bar.dev/35)
 
 👉 TP 5  
 📆 Avant ???
@@ -44,7 +44,7 @@
 
 <hr>
 
-🚩 **HAI914** ![25%](https://progress-bar.dev/25)
+🚩 **HAI914** ![75%](https://progress-bar.dev/75)
 
 👉 Rendu final  
 📆 Avant 4 jan.
