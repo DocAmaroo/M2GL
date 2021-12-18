@@ -51,24 +51,6 @@
 
 <hr>
 
-🚩 **HAI916** ![80%](https://progress-bar.dev/80)
-
-👉 Rendu Rapport sur un fichier choisis  
-📆 18 dec.    
-📚 Choisir un fichier parmis les 10 et faire un rapport dessus
-
-👉 Rendu RCA  
-📆 18 dec.    
-📊 DrawIO: https://drive.google.com/file/d/1FQikdatIE3cUAnTxg2bjkDjRfnIStfGn/view?usp=sharing  
-📚 Ce à quoi il faut répondre:
-
-1. Vous définirez et dessinerez un modèle UML de petite taille (quelques classes et associations) avec des refactorisation d'attributs, opérations et associations à effectuer.
-2. Puis vous mettrez en place le fichier RCFT pour coder le modèle.
-3. Vous appliquerez RCA avec FCA4J (recommandé et avec la version light) ou RCAexplore.
-4. Enfin vous dessinerez le modèle UML en forme normale suggéré par RCA. 
-
-<hr>
-
 🚩 **HAI931** ![0%](https://progress-bar.dev/0)
 
 👉 Examen terminal  
