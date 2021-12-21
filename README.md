@@ -24,7 +24,7 @@
 
 # TODO
 
-🚩 **HAI912** ![0%](https://progress-bar.dev/0)
+🚩 **HAI912** ![35%](https://progress-bar.dev/35)
 
 👉 Projet parking (code + rapport)  
 📆 17 jan. avant 12h
@@ -34,7 +34,7 @@
 
 <hr>
 
-🚩 **HAI913** ![0%](https://progress-bar.dev/0)
+🚩 **HAI913** ![15%](https://progress-bar.dev/15)
 
 👉 TP 5  
 📆 2 jan. avant 23h59
@@ -44,7 +44,7 @@
 
 <hr>
 
-🚩 **HAI914** ![25%](https://progress-bar.dev/25)
+🚩 **HAI914** ![75%](https://progress-bar.dev/75)
 
 👉 Rendu final  
 📆 4 jan. avant 23h59
