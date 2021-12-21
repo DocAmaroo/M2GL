@@ -24,30 +24,30 @@
 
 # TODO
 
-🚩 **HAI912** ![35%](https://progress-bar.dev/35)
+🚩 **HAI912** ![0%](https://progress-bar.dev/0)
 
 👉 Projet parking (code + rapport)  
-📆 23 décembre, 23h
+📆 17 jan. avant 12h
 
 👉 Article  
-📆 23 décembre, 23h
+📆 17 jan. avant 12h
 
 <hr>
 
-🚩 **HAI913** ![15%](https://progress-bar.dev/15)
+🚩 **HAI913** ![0%](https://progress-bar.dev/0)
 
 👉 TP 5  
-📆 Avant ???
+📆 2 jan. avant 23h59
 
 👉 TP 3 & 4  
-📆 Avant 10 jan.
+📆 10 jan. avant 23h59
 
 <hr>
 
-🚩 **HAI914** ![75%](https://progress-bar.dev/75)
+🚩 **HAI914** ![25%](https://progress-bar.dev/25)
 
 👉 Rendu final  
-📆 Avant 4 jan.
+📆 4 jan. avant 23h59
 
 <hr>
 
