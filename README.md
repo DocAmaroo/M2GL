@@ -36,25 +36,15 @@
 
 🚩 **HAI913** ![15%](https://progress-bar.dev/15)
 
-👉 TP 5  
-📆 2 jan. avant 23h59
-
 👉 TP 3 & 4  
 📆 10 jan. avant 23h59
 
 <hr>
 
-🚩 **HAI914** ![75%](https://progress-bar.dev/75)
-
-👉 Rendu final  
-📆 4 jan. avant 23h59
-
-<hr>
-
 🚩 **HAI931** ![0%](https://progress-bar.dev/0)
 
-👉 Examen terminal  
-📆 12 jan.  
+👉 Examen terminal 
+📆 12 jan. 9h - 11h
 📚 voir [annale 2021](./HAI931I/annales/Dony2021.pdf)
 
 <hr>
@@ -62,4 +52,4 @@
 🚩 **HAI934** ![0%](https://progress-bar.dev/0)
 
 👉 Examen terminal  
-📆 12 jan.
+📆 12 jan. 13h - 15h
