@@ -38,7 +38,7 @@ Une défaillance est détecté quand l'atténuation de la propagation radio est 
 
 ### Erreur de connectivité
 
-Pour détecter les erreurs de connectivité il est utilisé un test de biconnectivité sur la couche de routage. Si le graphe n'est pas biconnecté, il y a une erreur. Les stations de base surveillent l'état des liens du réseau en échangeant des messages de contrôle avec d'autres stations de base. L'un d'eux envoie des messages de contrôle et l'autre détermine l'état de la liaison sur la base d'une statistique sur les messages reçus. Les informations sur l'état des liaisons sont périodiquement mises à jour et communiquées afin que le dispositif de gestion effectue des tests de biconnectivité.
+Pour détecter les erreurs de connectivité il est utilisé un test de biconnectivité sur la couche de routage. Si le graphe n'est pas biconnecté, il y a une erreur. Les stations de base surveillent l'état des liens du réseau en échangeant des messages de contrôle avec d'autres stations de base. L'un d'eux envoie des messages de contrôle et l'autre détermine l'état de la liaison sur la base d'une statistique sur les messages reçus. Les informations sur l'état des liaisons sont périodiquement mises à jour et communiquées afin que le dispositif de gestion effectue des tests	 de biconnectivité.
 
 ## Restauration du système
 
