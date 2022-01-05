@@ -32,13 +32,13 @@ Assure que toutes les stations de bases peuvent communiquer entres elles (voir g
 
 * Permet d'éviter les échecs système en effectuant une récupération avant que les erreurs n'entraînent des défaillances.
 
-### Erreur de connectivité
-
-Pour détecter les erreurs de connectivité il est utilisé un test de biconnectivité sur la couche de routage. Si le graphe n'est pas biconnecté, il y a une erreur. Les stations de base surveillent l'état des liens du réseau en échangeant des messages de contrôle avec d'autres stations de base. L'un d'eux envoie des messages de contrôle et l'autre détermine l'état de la liaison sur la base d'une statistique sur les messages reçus. Les informations sur l'état des liaisons sont périodiquement mises à jour et communiquées afin que le dispositif de gestion effectue des tests de biconnectivité.
-
 ### Erreur de couverture radio
 
 Une défaillance est détecté quand l'atténuation de la propagation radio est augmenté, cela signifie qu'un ou plusieurs services de locations ne sont couverts par le signal.
+
+### Erreur de connectivité
+
+Pour détecter les erreurs de connectivité il est utilisé un test de biconnectivité sur la couche de routage. Si le graphe n'est pas biconnecté, il y a une erreur. Les stations de base surveillent l'état des liens du réseau en échangeant des messages de contrôle avec d'autres stations de base. L'un d'eux envoie des messages de contrôle et l'autre détermine l'état de la liaison sur la base d'une statistique sur les messages reçus. Les informations sur l'état des liaisons sont périodiquement mises à jour et communiquées afin que le dispositif de gestion effectue des tests de biconnectivité.
 
 ## Restauration du système
 
@@ -46,4 +46,8 @@ Une défaillance est détecté quand l'atténuation de la propagation radio est 
 * Problème NP-Complet, il faut donc trouver un compromis entre minimalité et temps d'exécution.
 
 
-Les emplacements de service sont répartis dans une certaine zone (par ex. de production). Par conséquent, la probabilité que la condition nécessaire soit également suffisante dans les réseaux maillés est nettement supérieure à celle de la théorie des graphes. nettement supérieure à celle de la théorie des graphes. Par conséquent, notre algorithme remplit la condition nécessaire locale et vérifie si la condition suffisante globale est également remplie. Si Si ce n'est pas le cas, l'algorithme effectue une correction incrémentale. L'avantage de cette approche est que l'exigence de connectivité sans augmenter la complexité du problème d'optimisation sous-jacent. d'optimisation sous-jacent.
+Leur algo fonctionne en trois étapes:
+1. optimisation &rarr; répare la couche radio en minimisant les conditions de connectivité.
+2. test de connectivité &rarr; vérifie la biconnectivité. Si c'est bon l'algo s'arrête, sinon passe à l'étape suivante.
+3. consolidation du graphe &rarr; retire certaines biconnection en une unique arêtes et recommence à l'étape 1.
+
