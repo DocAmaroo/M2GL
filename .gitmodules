@@ -16,3 +16,6 @@
 [submodule "HAI916I/tp/tp6/TicketClassifier"]
 	path = HAI916I/tp/tp6/TicketClassifier
 	url = git@github.com:DocAmaroo/TicketClassifier.git
+[submodule "HAI912I/arduino/parkingAPI"]
+	path = HAI912I/arduino/parkingAPI
+	url = git@github.com:DocAmaroo/parkingAPI.git
